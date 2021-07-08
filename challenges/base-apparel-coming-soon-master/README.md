@@ -28,12 +28,10 @@ The style-guide.md file is where you'll find colors, fonts, etc.
 
 
 
-## 🧰 Built with
+## ⚒️ Built with
 
 - HTML5
 - CSS3
-
-
 
 ## 🔗 Challenge solution
 
