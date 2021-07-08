@@ -1,0 +1,234 @@
+body{
+    font-size: 16px;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .welcome{
+    width: 60%;
+    height: 100%;
+    padding-left: 10%;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    background: url('../../image/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-position: right;
+    
+}
+
+.main .header{
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    position: absolute;
+    z-index: 19900;
+    top: 0;
+    left: 0;
+    padding-left: 10%;
+}
+
+.main .welcome .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 30%;
+    height: 100%;
+    /* align-items: center;    */
+
+
+}
+
+.main .welcome .container .title{
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+    letter-spacing: .2em;
+}
+
+.main .welcome .container .title span{
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    color: var(--Dark-Grayish-Red);
+}
+
+.main .welcome .container p{
+    margin: 30px 0;
+    display: block;
+    max-width: 420px;
+    color: var(--Desaturated-Red);
+    line-height: 1.5em;
+}
+
+.main .welcome .container .container-form{
+    max-width: 420px;
+    position: relative;
+}
+
+.container-form input{
+    width: 100%;
+    height: 48px;
+    border-radius: 40px;
+    padding: 0 30px;
+    border: 1px solid var(--Desaturated-Red);
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+
+.container-form input::placeholder{
+    color: var(--Desaturated-Red);
+    opacity: 0.5;
+}
+
+.container-form input:invalid{
+    border: 1px solid var(--Soft-Red);
+}
+
+.container-form input:invalid + span{
+    display: block;
+}
+
+.container-form span::before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 105px;
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+    background: url(../../image/icon-error.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-form .btn-s{
+    width: 90px;
+    height: 52px;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    cursor: pointer;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    border-radius: 40px;
+    border: none;
+    box-shadow: 2px 2px 20px var(--Desaturated-Red);
+    transition: 0.5s;
+}
+
+.container-form .btn-s:hover, .container-form .btn-s:active{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%) 100%,  hsl(0, 74%, 74%));
+    box-shadow: 5px 5px 15px var(--Desaturated-Red);
+}
+
+.container-form .error{
+    font-size: 12px;
+    color: var(--Desaturated-Red);
+    padding: 9px 30px;
+    font-weight: 700;
+    display: none;
+}
+
+.main .welcome-hero{
+    width: 40%;
+    height: 100%;
+    background: url('../../image/hero-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 910px){
+    .main{
+        min-height: none;
+        height: 100vh;
+    }
+    .main .header{
+        position: relative;
+        width: 100%;
+        padding-left: 18px;
+        height: 100px;
+    }
+
+    .main .welcome{
+        width: 100%;
+        padding: 0;
+        order: 2;
+        height: auto;
+         background-position: center center;
+    }
+
+    .main .welcome .container{
+        padding: 15% 0;
+       
+    }
+
+    .main .welcome .container .title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .main .welcome .container p{
+        text-align: center;
+        padding: 15px 32px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main .welcome .container .container-form{
+        max-width: none;
+        width: 100%;
+    }
+
+    .container-form input{
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container-form .error{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container-form .btn-s{
+    width: 70px;
+    height: 52px;
+    right: 30px;
+}
+
+    .main .welcome-hero{
+        width: 100%;
+        order: 1;
+        height: 40%;
+        min-height: 60vh;
+        background-size: cover;
+        background-image: url('../../image/hero-desktop.jpg');
+        background-position: top;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 862px){
+    .main .welcome-hero{
+        height: 100%;
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 375px){
+    .main .welcome-hero{
+        min-height: 40%;
+        background-image: url('../../image/hero-mobile.jpg');
+    }
+}
