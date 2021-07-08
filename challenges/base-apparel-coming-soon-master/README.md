@@ -7,6 +7,7 @@
 
 <br />
 <br />
+
 ## ⛩️ Brief
 
 Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
@@ -24,7 +25,7 @@ Download the starter code and go through the README.md file. This will provide f
 
 
 
-## 🧰 Built With
+## 🧰 Built with
 
 - HTML5
 - CSS3
