@@ -2,10 +2,10 @@
 
 # 🚀 Frontend Mentor - Base Apparel coming soon page solution
 
-This is a project designed to gain experience and test knowledge in website development through various technologies and methods.
+> This is a project designed to gain experience and test knowledge in website development through various technologies and methods.
 
 
-## ⛩️ Brief
+### ⛩️ Brief
 
 Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
 
@@ -25,11 +25,19 @@ The style-guide.md file is where you'll find colors, fonts, etc.
 
 
 
-## ⚒️ Built with
+### ⚒️ Built with
 
 - HTML5
 - CSS3
 
-## 🔗 Solution
+### 🔗 Solution
 
 To see how the challenge turned out, <a href="./index.html">click here</a>.
+
+### Author
+
+**Lucas Fernando**
+
+- [Profile](https://github.com/lucasfernandodev "Lucas Fernando")
+- [Email](mailto:lucasfernando.dev0@gmail.com?subject=Hi% "Hi!")
+- [Website](https://lucasfernandodev.com.br "Welcome")
