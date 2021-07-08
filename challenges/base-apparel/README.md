@@ -39,4 +39,4 @@ To see how the challenge turned out, <a href="./index.html">click here</a>.
 
 👋 [Github Profile](https://github.com/lucasfernandodev "Lucas Fernando")<br>
 📫 [Send me an email](mailto:lucasfernando.dev0@gmail.com?subject=Hi% "Hi!")<br>
-💻 [visit portfolio](https://lucasfernandodev.com.br "Welcome")<br>
+💻 [Visit portfolio](https://lucasfernandodev.com.br "Welcome")<br>
