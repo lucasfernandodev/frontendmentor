@@ -37,6 +37,6 @@ To see how the challenge turned out, <a href="./index.html">click here</a>.
 
 **Lucas Fernando**
 
-👋 Github Profile - [go now](https://github.com/lucasfernandodev "Lucas Fernando")<br>
-📫 Send me an email - [go now](mailto:lucasfernando.dev0@gmail.com?subject=Hi% "Hi!")<br>
-💻 visit portfolio- [go now](https://lucasfernandodev.com.br "Welcome")<br>
+👋 Github Profile - [Take a look](https://github.com/lucasfernandodev "Lucas Fernando")<br>
+📫 Send me an email - [Send now](mailto:lucasfernando.dev0@gmail.com?subject=Hi% "Hi!")<br>
+💻 visit portfolio- [Take a look](https://lucasfernandodev.com.br "Welcome")<br>
