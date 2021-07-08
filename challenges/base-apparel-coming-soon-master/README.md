@@ -5,8 +5,9 @@
   🚀 Frontend Mentor - Base Apparel coming soon page solution
 </h1>
 
-<br />
-<br />
+<p align="center">
+  This is a project designed to gain experience and test knowledge in website development through various technologies and methods.
+</p>
 
 ## ⛩️ Brief
 
