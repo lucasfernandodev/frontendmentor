@@ -33,6 +33,6 @@ The style-guide.md file is where you'll find colors, fonts, etc.
 - HTML5
 - CSS3
 
-## 🔗 Challenge solution
+## 🔗 Solution
 
 To see how the challenge turned out, <a href="./index.html">click here</a>.
