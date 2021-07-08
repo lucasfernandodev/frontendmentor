@@ -1,13 +1,9 @@
-<p align="center">
-  <img src="./docs/design/desktop-design.jpg" alt="design base apparel" />
-</p>
-<h1 align="center">
-  🚀 Frontend Mentor - Base Apparel coming soon page solution
-</h1>
+<img src="./docs/design/desktop-design.jpg" alt="design base apparel" />
 
-<p align="center">
-  This is a project designed to gain experience and test knowledge in website development through various technologies and methods.
-</p>
+# 🚀 Frontend Mentor - Base Apparel coming soon page solution
+
+This is a project designed to gain experience and test knowledge in website development through various technologies and methods.
+
 
 ## ⛩️ Brief
 
