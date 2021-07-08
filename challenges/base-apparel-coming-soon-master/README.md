@@ -5,6 +5,8 @@
   🚀 Frontend Mentor - Base Apparel coming soon page solution
 </h1>
 
+<br />
+<br />
 ## ⛩️ Brief
 
 Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
@@ -20,11 +22,15 @@ The input field is empty
 The email address is not formatted correctly
 Download the starter code and go through the README.md file. This will provide further details about the project. The style-guide.md file is where you'll find colors, fonts, etc.
 
+
+
 ## 🧰 Built With
 
 - HTML5
 - CSS3
 
+
+
 ## 🔗 Challenge solution
 
-To see how the challenge turned out, <a>click here</a>.
+To see how the challenge turned out, <a href="./index.html">click here</a>.
