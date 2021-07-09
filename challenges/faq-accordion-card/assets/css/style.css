@@ -267,7 +267,7 @@ img.woman{
     }
 }
 
-.faq-inside-text h2.title{
+.faq-inside-text h1.title{
     margin-bottom: 50px;
     font-size: 32px;
     color: var(--Very-dark-desaturated-blue);
@@ -278,13 +278,13 @@ img.woman{
 }
 
 @media (max-width: 850px){
-    .faq-inside-text h2.title{
+    .faq-inside-text h1.title{
         top: 45px;
     }
 }
 
 @media (max-width: 700px){
-    .faq-inside-text h2.title{
+    .faq-inside-text h1.title{
         top: 25px;
     }
 }
