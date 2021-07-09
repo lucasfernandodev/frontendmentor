@@ -22,6 +22,10 @@
     --Light-grayish-blue: hsl(240, 5%, 91%);
 }
 
+h2{
+    font-size: 1.17em;
+}
+
 body{
     width: 100%;
     height: 100vh;
