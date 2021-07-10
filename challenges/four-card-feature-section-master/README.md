@@ -1,6 +1,6 @@
-<img src="./docs/design/desktop-design.jpg" alt="Intro component with signup form master" />
+<img src="./docs/design/desktop-design.jpg" alt="Four card feature section" />
 
-# 🚀 Frontend Mentor - Intro component with signup form master
+# 🚀 Frontend Mentor - Four card feature section
 
 This is a project designed to gain experience and test knowledge in website development through various technologies and methods.
 <br>
@@ -28,7 +28,6 @@ The style-guide.md file is where you'll find colors, fonts, etc.
 
 - HTML5
 - CSS3
-- JS
 
 ## 🔗 Solution
 
