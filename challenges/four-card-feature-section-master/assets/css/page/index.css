@@ -1,0 +1,137 @@
+body{
+    background: var(--Very-Light-Gray)
+}
+.header{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 9%;
+    padding-top: 5%;
+}
+
+.header h1{
+    font-weight: 200;
+    font-size: 2.2rem;
+    color: var( --Very-Dark-Blue)
+
+}
+
+.header h2{
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var( --Very-Dark-Blue)
+}
+
+.header p{
+    font-weight: 400;
+    margin-bottom: 15px;
+    max-width: 500px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+/* Main */
+.main{
+    width: 100%;
+    height: 100vh;
+    padding: 0 9%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main .container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container:nth-child(2){
+    flex-direction: column;
+}
+
+.main .container .card{
+    border-top: 4px solid var(--Cyan);
+}
+
+.main .container:nth-child(2) .card{
+    border-top: 4px solid var(--Red);
+}
+
+.main .container:nth-child(2) .card:nth-child(2) {
+    border-top: 4px solid var(--Orange);
+}
+
+.main .container:nth-child(3) .card{
+    border-top: 4px solid var(--Blue);
+}
+
+@media (max-width: 1324px){
+    .main{
+        justify-content: space-evenly;
+    }
+    .main .container{
+        height: auto;
+    }
+
+    .main .container:nth-child(2){
+        order: 3;
+    }
+
+    .main .container:nth-child(3){
+        order: 2;
+    }
+}
+
+@media (max-width: 950px){
+    .main .container{
+        height: auto;
+        width: 100%;
+    }
+    .main .container:nth-child(2){
+        order: 2;
+    }
+
+    .main .container:nth-child(3){
+        order: 3;
+    }
+}
+
+@media (max-width: 590px){
+    .header{
+        padding-top: 10%;
+    }
+    .header h1{
+        font-size: 1.7rem;
+    }
+
+    .header h2{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 420px){
+    .header{
+        padding-top: 10%;
+    }
+    .header h1{
+        font-size: 1.5rem;
+    }
+
+    .header h2{
+        font-size: 1.5rem;
+    }
+
+    .main{
+        padding: 0 30px;
+    }
+}

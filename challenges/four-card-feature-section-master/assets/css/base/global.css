@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+
+
+:root{
+    /* Primary */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+
+    /* Neutral */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+div{
+    display: block;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* 
+****************
+    CARDS
+****************
+*/
+
+
+.card{
+    width: 350px;
+    height: 240px;
+    background: #fff;
+    margin: 15px 0;
+    border-radius: 7px;
+    border-top: 4px solid var(--Red);
+    box-shadow: 0px 15px 35px -20px var(--Grayish-Blue);
+
+    padding: 30px;
+}
+
+@media(max-width: 375px){
+    .card{
+        width: 315px;
+        height: 235px;
+    }
+}
+
+
+.card .title{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.card .subtitle{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: 200;
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+}
+
+.card .container-icon{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
