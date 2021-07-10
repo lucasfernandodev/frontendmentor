@@ -105,6 +105,7 @@
     font-weight: 500;
     order: 2;
     margin: 14px 0;
+    cursor: pointer;
 }
 
 .container-form .form-group p{
@@ -129,6 +130,7 @@
         font-size: 14px;
     }
     .container-form .form-group button{
+        cursor: pointer;
         width: 100%;
     }
     .container-form .form-group p{
