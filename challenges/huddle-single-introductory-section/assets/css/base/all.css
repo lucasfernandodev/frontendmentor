@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%)
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+h1{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+@media (min-width: 956px){
+    h1{
+        font-size: 2.5rem;
+    }
+}
+a{
+    color: inherit;
+    opacity: 0.8;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+.bnt-register{
+    width: 250px;
+    height: 54px;
+    border-radius: 54px;
+    color: var(--Violet);
+    background: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+@media (min-width: 956px){
+    .bnt-register{
+        width: 180px;
+        height: 48px;
+        border-radius: 48px;
+    }
+
+    .bnt-register:hover{
+        box-shadow: unset;
+    }
+}
+
+.link-hide{
+    display: none;
+}
