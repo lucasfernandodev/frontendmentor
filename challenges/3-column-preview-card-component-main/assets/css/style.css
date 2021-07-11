@@ -1,0 +1,126 @@
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray:hsl(0, 0%, 95%);
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background: var(--Very-light-gray);
+    overflow: hidden;
+    overflow-y: auto;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+@media (max-width: 950px){
+    .main{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+}
+
+.card{
+    width: calc(100% - 60px);
+    max-width: 300px;
+    height: 480px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0.5px 0.5px 1px 1.5px rgba(0, 0, 0, 0.1) inset;
+}
+
+@media (max-width: 950px){
+    .main .card{
+        margin: 0 auto;
+    }
+}
+.card:nth-child(1){
+    background: var(--Bright-orange);
+    border-radius: 8px 0px 0px 8px;
+}
+.card:nth-child(2){
+    background: var(--Dark-cyan);
+}
+.card:nth-child(3){
+    background: var(--Very-dark-cyan);
+    border-radius: 0px 8px 8px 0px;
+}
+
+@media (max-width: 950px){
+    .card:nth-child(1){
+        border-radius: 8px 8px 0px 0px;
+    }
+    .card:nth-child(3){
+        border-radius: 0px 0px 8px 8px;
+    }
+}
+
+.card__title{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+    font-size: 44px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card__text{
+    color: var(--Transparent-white);
+    line-height: 1.6;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.card__btn{
+    width: 150px;
+    height: 48px;
+    background: var(--Very-light-gray);
+    border: 2px solid var(--Very-light-gray);
+    text-transform: capitalize;
+    border-radius: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:nth-child(1) .card__btn{
+    color: var(--Bright-orange);
+}
+.card:nth-child(2) .card__btn{
+    color: var(--Dark-cyan);
+}
+.card:nth-child(3) .card__btn{
+    color: var(--Very-dark-cyan);
+}
+
+.card .card__btn:hover{
+    background: transparent;
+    color: var(--Very-light-gray);
+}
