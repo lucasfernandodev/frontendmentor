@@ -13,11 +13,13 @@
     --color-Grayish-Blue: hsl(218, 22%, 67%);
     --size-padding: 40px;
 }
+
 @media (max-width: 520px){
     :root{
         --size-padding: 25px;
     }
 }
+
 body{
     font-size: 16px;
     font-family: 'Karla', sans-serif;
@@ -68,6 +70,7 @@ h3{
     width: calc(100% - 32px);
     max-width: 640px;
     color: #fff;
+    box-shadow: 0px 8px 32px rgba(50, 60, 55,0.19);
 }
 
 .card__container{
@@ -132,6 +135,12 @@ h3{
     cursor: pointer;
     border-radius: 4px;
     margin-top: 24px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2)
+}
+
+.card__button:hover{
+    filter: brightness(0.9);
 }
 
 .card_why{
