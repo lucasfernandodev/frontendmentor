@@ -11,8 +11,13 @@
     --color-Bright-Yellow: hsl(71, 73%, 54%);
     --color-Light-Gray: hsl(204, 43%, 93%);
     --color-Grayish-Blue: hsl(218, 22%, 67%);
+    --size-padding: 40px;
 }
-
+@media (max-width: 520px){
+    :root{
+        --size-padding: 25px;
+    }
+}
 body{
     font-size: 16px;
     font-family: 'Karla', sans-serif;
@@ -75,7 +80,7 @@ h3{
 .card__container:nth-child(1){
     background: #fff;
     color: var(--color-Grayish-Blue);
-    padding: 40px;
+    padding: var(--size-padding);
     display: flex;
     flex-direction: column;
 }
@@ -87,7 +92,7 @@ h3{
 .card__col{
     flex: 1;
     background: var(--color-Cyan);
-    padding: 40px;
+    padding: var(--size-padding);
     min-width: 320px;
 }
 
