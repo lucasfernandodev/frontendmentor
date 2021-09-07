@@ -90,7 +90,7 @@ img{
   gap: 16px;
 }
 
-.plan .content h3{
+.plan .content h2{
   color: hsl(223, 47%, 23%);
 }
 
@@ -182,7 +182,7 @@ img{
   .plan .content{
     gap: 8px;
   }
-  .plan .content h3{
+  .plan .content h2{
     font-size: 16px;
   }
 
