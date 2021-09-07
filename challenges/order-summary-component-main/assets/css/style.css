@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body{
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.card{
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: hsl(225, 100%, 98%);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 12px 26px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  max-height: calc(100% - 40px);
+}
+
+@media (max-height: 680px){
+  body{
+    height: 100%;
+    max-height: unset;
+    overflow-y: auto;
+  }
+  .card{
+    max-height: unset;
+  }
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 26px 48px;
+}
+
+.card .title{
+  font-size: 28px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.card .description{
+  color: hsl(224, 23%, 55%);
+  font-weight: 16px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.plan{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 26px;
+  max-height: 48px;
+}
+
+.plan .content{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.plan .content h3{
+  color: hsl(223, 47%, 23%);
+}
+
+.plan .content p{
+  color: hsl(224, 23%, 55%);
+}
+
+.plan a{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  max-height: 48px;
+  justify-content: center;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.plan a:hover{
+  opacity: 0.67;
+  text-decoration: none;
+}
+
+.plan-icon img{
+  height: 48px;
+  width: 48px;
+}
+
+.group-button{
+  display: flex;
+  flex-direction: wrap;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card .group-button button{
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+.card .group-button button:first-child{
+  background: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card .group-button button:first-child:hover{
+  opacity: 0.67;
+}
+
+.card .group-button button:last-child{
+  color: hsl(224, 23%, 55%);
+  height: auto;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.card .group-button button:last-child:hover{
+  color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 510px){
+  body{
+    padding: 30px;
+    height: 100%;
+    background-color: hsl(225, 100%, 94%);
+    overflow-y: auto;
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+  .card-body{
+    padding: 24px;
+  }
+
+  .card .title{
+    font-size: 22px;
+  }
+  .card .description{
+    font-size: 15px;
+  }
+  .plan .content{
+    gap: 8px;
+  }
+  .plan .content h3{
+    font-size: 16px;
+  }
+
+  .plan a{
+    font-size: 13px;
+  }
+  
+
+}
