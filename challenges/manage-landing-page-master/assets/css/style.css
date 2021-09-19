@@ -20,6 +20,9 @@ body {
   height: auto;
   min-height: 100vh;
   font-weight: 400;
+  overflow: hidden;
+  max-width: 100vw;
+  overflow-y: scroll;
 }
 body,
 input,
@@ -55,6 +58,7 @@ img {
     background-position-y: -15vh;
     background-size: 110vw;
     background-repeat: no-repeat;
+
   }
 
   header {
@@ -106,6 +110,7 @@ img {
     background-position-y: bottom;
     background-size: 85vw;
     background-repeat: no-repeat;
+    
   }
 
   .hero .col:first-child {
@@ -151,6 +156,8 @@ img {
   .about {
     padding: 0 16px;
     padding-bottom: 50px;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   .about h2 {
@@ -211,6 +218,7 @@ img {
     overflow: hidden;
     max-width: 100vw;
   }
+  
   .slider-content{
     width: 100%;
     display: flex;
@@ -282,8 +290,20 @@ img {
     border-radius: 50%;
     border: 1px solid var(--primary);
   }
-  
+
   .sign-active{
     background: var(--primary);
+  }
+
+  .testimonial .button{
+    height: 42px;
+    width: 136px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 50px auto;
+    display: block;
+    box-shadow: 0px 4px 8px var(--primary);
+    cursor: pointer;
   }
 }
