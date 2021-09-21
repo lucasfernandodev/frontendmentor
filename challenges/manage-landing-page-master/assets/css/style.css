@@ -16,20 +16,22 @@
 
 body {
   color: var(--Very-Dark-Blu);
-  width: 100vw;
+  width: 100%;
   height: auto;
-  min-height: 100vh;
   font-weight: 400;
-  overflow: hidden;
+
   max-width: 100vw;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
+
 body,
 input,
 button {
   font-family: "Be Vietnam", sans-serif;
   font-size: 16px;
 }
+
 img {
   max-width: 100%;
 }
@@ -40,17 +42,9 @@ img {
   font-weight: 500;
   border: unset;
 }
-/* body::after {
-  content: "";
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  background: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-} */
+
+
+
 @media (max-width: 410px) {
   body {
     background-image: url(../images/bg-tablet-pattern.svg);
@@ -156,8 +150,6 @@ img {
   .about {
     padding: 0 16px;
     padding-bottom: 50px;
-    overflow-x: hidden;
-    max-width: 100vw;
   }
 
   .about h2 {
@@ -177,8 +169,13 @@ img {
   }
 
   .about ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     list-style: none;
     margin-top: 56px;
+    overflow-x: hidden;
+    max-width: 100%;
   }
   .about ul li{
     margin-bottom: 30px;
@@ -305,5 +302,191 @@ img {
     display: block;
     box-shadow: 0px 4px 8px var(--primary);
     cursor: pointer;
+  }
+
+  .ancor{
+    background: var(--primary);
+    padding: 64px 16px;
+
+    z-index: 1;
+    position: relative;
+    height: auto;
+  }
+
+  .ancor::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-position-x: -96vw;
+    background-position-y: 8vh;
+    background-size: 120vw;
+    background-repeat: no-repeat;
+    z-index: 10;
+    opacity: 0.1;
+  }
+
+  .ancor h2 {
+    font-size: 40px;
+    color: var(--Very-Pale-Red);
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .ancor .button{
+    height: 42px;
+    width: 136px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 32px auto;
+    display: block;
+    box-shadow: 0px 4px 8px var(--primary);
+    cursor: pointer;
+    border: none;
+    color: var(--primary);
+    margin-bottom: 0;
+  }
+
+  footer{
+    background: var(--Very-Dark-Blue);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 16px;
+  }
+
+  /* Order */
+  footer .form-top{
+    order: 1;
+  }
+  footer .all{
+    order: 3;
+  }
+  footer .navbar{
+    order: 2;
+  }
+  footer .form-bottom{
+    order: 4;
+  }
+  footer .author{
+    order: 5;
+  }
+
+  footer .form-top .action{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  footer .form-top input{
+    height: 42px;
+    width: calc(100% - 78px);
+    border-radius: 24px;
+    border: none;
+    font-size: 13px;
+    padding-left: 24px;
+    vertical-align:middle;
+  }
+
+  footer .form-top button{
+    height: 42px;
+    width: 70px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    display: block;
+      background: var(--primary);
+    cursor: pointer;
+    border: none;
+    color: var(--Very-Pale-Red);
+    margin-bottom: 0;
+  }
+
+  footer .all{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  footer .all .brand{order: 2;}
+  footer .all .social{order: 1;}
+
+  footer .brand{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  footer .all .social ul{
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 50px 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .all .social ul li a{
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+
+  footer .all .social ul li a svg{
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+
+  footer nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  footer nav ul{
+    width: calc(100% / 2);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 40px;
+  }
+
+  footer nav ul li a{
+    color: var(--Very-Pale-Red);
+    text-decoration: none;
+  }
+
+  footer .form-bottom{
+    display: none;
+  }
+
+  footer .author{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 14px;
   }
 }
