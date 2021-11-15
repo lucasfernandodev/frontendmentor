@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <main class="board">
+
+    <!-- Board Main -->
+    <section class="board-main">
+      <div class="card card-user">
+        <div class="card-top">
+          <div class="user-info">
+            <div class="user-photo">
+              <img src="./assets/images/image-jeremy.png" alt="jeremy">
+            </div>
+            <div class="info">
+              <p class="user-report">Report for</p>
+            <h1 class="user-name">Jeremy Robson</h1>
+            </div>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="user-period">
+            <ul>
+              <li><a href="#" class="period-control" data-control="daily">Daily</a></li>
+              <li><a href="#" class="period-control" data-control="weekly">Weekly</a></li>
+              <li><a href="#" class="period-control" data-control="monthly">Monthly</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Board Peace -->
+    <section class="board-peace">
+
+      <!-- Work -->
+      <div class="card" data-time="Work">
+        <div class="card-top"></div>
+        <div class="card-bottom">
+          <div class="header">
+            <h2>Work</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                 fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="main">
+            <span class="current">5hrs</span>
+          </div>
+          <div class="pass">
+            Last Week - <span class="previous">7hrs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Play -->
+      <div class="card" data-time="Play">
+        <div class="card-top"></div>
+        <div class="card-bottom">
+          <div class="header">
+            <h2>Play</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                 fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="main">
+            <span class="current">1hr</span>
+          </div>
+          <div class="pass">
+            Last Week - <span class="previous">2hrs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Study -->
+      <div class="card" data-time="Study">
+        <div class="card-top"></div>
+        <div class="card-bottom">
+          <div class="header">
+            <h2>Study</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                 fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="main">
+            <span class="current">0hrs</span>
+          </div>
+          <div class="pass">
+            Last Week - <span class="previous">1hr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exercise -->
+      <div class="card" data-time="Exercise">
+        <div class="card-top"></div>
+        <div class="card-bottom">
+          <div class="header">
+            <h2>Exercise</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                 fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="main">
+            <span class="current">1hr</span>
+          </div>
+          <div class="pass">
+            Last Week - <span class="previous">1hr</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social -->
+      <div class="card" data-time="Social">
+        <div class="card-top"></div>
+        <div class="card-bottom">
+          <div class="header">
+            <h2>Social</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                 fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="main">
+            <span class="current">1hr</span>
+          </div>
+          <div class="pass">
+            Last Week - <span class="previous">3hrs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Self Care -->
+      <div class="card" data-time="Self Care">
+        <div class="card-top"></div>
+        <div class="card-bottom">
+          <div class="header">
+            <h2>Self Care</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                 fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="main">
+            <span class="current">0hrs</span>
+          </div>
+          <div class="pass">
+            Last Week - <span class="previous">1hr</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    const data = [
+      {
+        "title": "Work",
+        "timeframes": {
+          "daily": {
+            "current": 5,
+            "previous": 7
+          },
+          "weekly": {
+            "current": 32,
+            "previous": 36
+          },
+          "monthly": {
+            "current": 103,
+            "previous": 128
+          }
+        }
+      },
+      {
+        "title": "Play",
+        "timeframes": {
+          "daily": {
+            "current": 1,
+            "previous": 2
+          },
+          "weekly": {
+            "current": 10,
+            "previous": 8
+          },
+          "monthly": {
+            "current": 23,
+            "previous": 29
+          }
+        }
+      },
+      {
+        "title": "Study",
+        "timeframes": {
+          "daily": {
+            "current": 0,
+            "previous": 1
+          },
+          "weekly": {
+            "current": 4,
+            "previous": 7
+          },
+          "monthly": {
+            "current": 13,
+            "previous": 19
+          }
+        }
+      },
+      {
+        "title": "Exercise",
+        "timeframes": {
+          "daily": {
+            "current": 1,
+            "previous": 1
+          },
+          "weekly": {
+            "current": 4,
+            "previous": 5
+          },
+          "monthly": {
+            "current": 11,
+            "previous": 18
+          }
+        }
+      },
+      {
+        "title": "Social",
+        "timeframes": {
+          "daily": {
+            "current": 1,
+            "previous": 3
+          },
+          "weekly": {
+            "current": 5,
+            "previous": 10
+          },
+          "monthly": {
+            "current": 21,
+            "previous": 23
+          }
+        }
+      },
+      {
+        "title": "Self Care",
+        "timeframes": {
+          "daily": {
+            "current": 0,
+            "previous": 1
+          },
+          "weekly": {
+            "current": 2,
+            "previous": 2
+          },
+          "monthly": {
+            "current": 7,
+            "previous": 11
+          }
+        }
+      }
+    ];
+
+    var currentPeriod = 'daily';
+
+    const controlPeriod = document.querySelectorAll('.period-control');
+    const cards = document.querySelectorAll('.board-peace .card');
+
+
+
+
+    controlPeriod.forEach((item) => {
+
+      if (item.dataset.control == currentPeriod) {
+
+        if (!item.classList.contains("active")) {
+          item.classList.add("active");
+        } else {
+          item.classList.remove("active");
+        }
+      } else {
+        item.classList.remove("active");
+      }
+
+
+      item.addEventListener("click", changeValues)
+    });
+
+    function changeValues(element) {
+
+      if (currentPeriod != element.target.dataset.control) {
+        currentPeriod = element.target.dataset.control;
+
+        const time = data.map((item, indice) => {
+
+
+          const { timeframes } = item;
+
+          return timeframes[currentPeriod];
+        });
+
+
+        // Muda o time current
+        for (let i = 0; i < cards.length; i++) {
+          const itemElement = cards[i].dataset.time;
+          const currentTime = cards[i].querySelector('.main .current');
+          const previousTime = cards[i].querySelector('.pass .previous');
+
+          currentTime.innerHTML = `${time[i].current}hrs`;
+          previousTime.innerHTML = `${time[i].previous}hrs`;
+        }
+
+      }
+
+      controlPeriod.forEach((item) => {
+
+        if (item.dataset.control == currentPeriod) {
+
+          if (!item.classList.contains("active")) {
+            item.classList.add("active");
+          } else {
+            item.classList.remove("active");
+          }
+        } else {
+          item.classList.remove("active");
+        }
+      });
+
+      console.log(`The current period is ${currentPeriod}`);
+    };
+  </script>
+
+</body>
+
+</html>
