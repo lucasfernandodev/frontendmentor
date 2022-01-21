@@ -11,6 +11,8 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 
 <br />
 
+Se tem interesse em ver o horiginal de uma olhada na pasta /decs/design, ou visite diretamente meu perfil no <a href="/">Frontend Mentor</a>.
+
 ## 🎯 Objetivo
 
 - Desenvolver um card fiel ao design, com responsividade e rápidez.
