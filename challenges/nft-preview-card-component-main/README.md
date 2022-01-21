@@ -11,11 +11,14 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 
 <br />
 
-Se tem interesse em ver o original de uma olhada na pasta <i>/docs/design</i>, ou visite diretamente meu perfil no <a href="/">Frontend Mentor</a>.
+Se tem interesse em ver o design original de uma olhada na pasta <i>/docs/design</i>, ou visite diretamente meu perfil no <a href="/">Frontend Mentor</a>.
 
-## 🎯 Objetivo
+## 🎯 Objetivos
 
-- Desenvolver um card fiel ao design, com responsividade e rápidez.
+- [ ] Responsividade
+- [ ] Acessibilidade
+- [ ] Animações
+
 
 
 ## ⚡ Tecnologias
