@@ -6,7 +6,7 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 
 ## Informações
 
-<b>Nome do Projeto:</b> - NFT preview card component
+<b>Nome do Projeto:</b> - NFT preview card component<br />
 <b>Nivel:</b> 🔥
 
 <br />
