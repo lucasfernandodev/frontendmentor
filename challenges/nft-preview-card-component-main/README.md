@@ -6,8 +6,8 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 
 ## Informações
 
-<b>Nome do Projeto:</b> - NFT preview card component<br />
-<b>Nivel:</b> 🔥
+<b>Nome do Projeto:</b> NFT preview card component<br />
+<b>Nivel do Projeto:</b> 🔥
 
 <br />
 
@@ -15,16 +15,11 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 
 - Desenvolver um card fiel ao design, com responsividade e rápidez.
 
-<br />
-
 
 ## ⚡ Tecnologias
 
 - <b>HTML5</b>
 - <b>CSS3</b>
-
-<br />
-
 
 ## 📢 Solução
 
