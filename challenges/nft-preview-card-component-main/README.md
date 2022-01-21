@@ -5,8 +5,7 @@
 
 Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o objetivo de avançar mais como dev ganhando experiência em diversos projetos, sempre com um novo desafio, ficando cada vez mais complicado.
 
-<br />
-<br />
+
 <br />
 
 ## 🎯 Objetivo
@@ -14,7 +13,7 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 - Desenvolver um card fiel ao design utilizando HTML5 e CSS
 
 <br />
-<br />
+
 
 ## ⚡ Tecnologias
 
@@ -22,14 +21,14 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 - <b>CSS3</b>
 
 <br />
-<br />
+
 
 ## 📢 Solução
 
 Dê uma olhada em como ficou a solução, <a href="./index.html" title="Visitar site">clicando aqui</a>.
 
 <br />
-<br />
+
 
 ## 📍 Me encontre
 
