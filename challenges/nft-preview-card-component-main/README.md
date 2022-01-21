@@ -26,6 +26,9 @@ Se tem interesse em ver o design original de uma olhada na pasta <i>/docs/design
 - <b>HTML5</b>
 - <b>CSS3</b>
 
+<br />
+
+
 ## 📢 Solução
 
 Dê uma olhada em como ficou a solução, <a href="./index.html" title="Visitar site">clicando aqui</a>.
