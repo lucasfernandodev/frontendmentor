@@ -8,22 +8,20 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 
 
 
-## ⏹️ Objetivo
+## 🎯 Objetivo
 
-- Desenvolver um card utilziando HTML5 e CSS
-
-
+- Desenvolver um card fiel ao design utilizando HTML5 e CSS
 
 
-## ⏹️ Tecnologias
+## ⚡ Tecnologias
 
-- HTML5
-- CSS3
+- <b>HTML5</b>
+- <b>CSS3</b>
 
 
 
 
-## ⏹️ Solução
+## ⏹📢 Solução
 
 Dê uma olhada em como ficou a solução, <a href="./index.html" title="Visitar site">clicando aqui</a>.
 
