@@ -1,33 +1,32 @@
 <img src="./docs/design/desktop-design.jpg" alt="Frontend Mentor - NFT preview card component" />
 
-# 🚀 Frontend Mentor - NFT preview card component
+# Frontend Mentor - NFT preview card component
 
 
 Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o objetivo de avançar mais como dev ganhando experiência em diversos projetos, sempre com um novo desafio, ficando cada vez mais complicado.
 
-
-
-
+<br />
+<br />
+<br />
 ## 🎯 Objetivo
 
 - Desenvolver um card fiel ao design utilizando HTML5 e CSS
 
-
+<br />
+<br />
 ## ⚡ Tecnologias
 
 - <b>HTML5</b>
 - <b>CSS3</b>
 
-
-
-
-## ⏹📢 Solução
+<br />
+<br />
+## 📢 Solução
 
 Dê uma olhada em como ficou a solução, <a href="./index.html" title="Visitar site">clicando aqui</a>.
 
-
-
-
+<br />
+<br />
 ## 📍 Me encontre
 
   Entre em contato comigo diretamente por email ou pelas redes sociais, Dê uma passada no meu Codepen e veja um pouco mais do meu trabalho.
