@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background:  hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+hr{
+    border: none;
+    background: hsl(215, 32%, 27%);
+    height: 1px;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    max-width: 350px;
+    max-height: 594px;
+    padding: 23px;
+    border-radius: 16px;
+    background: hsl(216, 50%, 16%);
+    box-shadow: 30px 15px 10px rgba(0, 0, 0, 0.15),
+                -30px 15px 10px rgba(0, 0, 0, 0.15),
+                0 -15px 10px rgba(0, 0, 0, 0.09);
+}
+
+.card{
+    animation: animation linear forwards 1s;
+}
+
+.card *:not(.content-img__hover){
+    animation: animation linear forwards 1.5s;
+}
+
+@keyframes animation {
+  from {
+      opacity: 0;
+  }  to {
+      opacity: 1;
+  }
+}
+
+.card .content-img{
+    display: block;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.card .content-img img{
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.content-img__hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    background: hsla(178, 100%, 50%, 0.521);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 350ms ease-out;
+}
+
+.card .content-img:hover .content-img__hover{
+    width: 100%;
+    height: calc(100% - 4px);
+    top: 0;
+    left: 0;
+    transform: unset;
+}
+
+
+.content-img__hover img{
+    width: 30px;
+}
+
+.card .content-title{
+    display: block;
+    margin-bottom: 22px;
+}
+
+.card .content-title h1{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card .content-subtitle{
+    display: block;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+
+.card .content-price{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+    justify-content: space-between;
+}
+
+.card .content-price .price-real, .card .content-price .price-day{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 18px;
+    gap: 4px;
+}
+
+.card .content-price .price-real .price-text{
+    font-weight: 600;
+    font-size: 14px;
+    color: hsl(178, 100%, 50%);
+}
+
+.card .content-price .price-day .price-text{
+    font-weight: 400;
+    font-size: 14px;
+}
+.card .content-price .price-icon img{
+    height: 16px;
+    width: auto;
+}
+
+.card hr{
+    margin-bottom: 8px;
+}
+
+.card .user{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    min-height: 40px;
+    align-items: center;
+}
+
+
+.card .user .user-image img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.card .user .user-image{
+    margin-right: 8px;
+}
+
+.card .user .user-author{
+    font-size: 16px;
+}
