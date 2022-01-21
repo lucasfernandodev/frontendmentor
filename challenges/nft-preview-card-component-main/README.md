@@ -8,12 +8,14 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 <br />
 <br />
 <br />
+
 ## 🎯 Objetivo
 
 - Desenvolver um card fiel ao design utilizando HTML5 e CSS
 
 <br />
 <br />
+
 ## ⚡ Tecnologias
 
 - <b>HTML5</b>
@@ -21,12 +23,14 @@ Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o obj
 
 <br />
 <br />
+
 ## 📢 Solução
 
 Dê uma olhada em como ficou a solução, <a href="./index.html" title="Visitar site">clicando aqui</a>.
 
 <br />
 <br />
+
 ## 📍 Me encontre
 
   Entre em contato comigo diretamente por email ou pelas redes sociais, Dê uma passada no meu Codepen e veja um pouco mais do meu trabalho.
