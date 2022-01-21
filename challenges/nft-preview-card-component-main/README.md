@@ -1,42 +1,27 @@
-<img src="./docs/design/desktop-design.jpg" alt="3-column preview card component" />
+<img src="./docs/design/desktop-design.jpg" alt="Frontend Mentor - NFT preview card component" />
 
 # 🚀 Frontend Mentor - NFT preview card component
 
-This is a project designed to gain experience and test knowledge in website development through various technologies and methods.
-<br>
-<br>
+Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o objetivo de Melhorar o desenvolvimento e ganhar experiÊncia, sempre com um novo desafio, ficando cada vez mais complicado.
 
-## ⛩️ Brief
+### ⏹️ Objetivo
 
-Your challenge is to build out this preview card component and get it looking as close to the design as possible.
+- Desenvolver um card utilziando HTML5 e CSS
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Receive an error message when the form is submitted if:
-  - The input field is empty
-  - The email address is not formatted correctly
-
-This will provide further details about the project. 
-The style-guide.md file is where you'll find colors, fonts, etc.
-
-
-
-## ⚒️ Built with
+### ⏹️ Tecnologias
 
 - HTML5
 - CSS3
 
-## 🔗 Solution
+### ⏹️ Solução
 
-To see how the challenge turned out, <a href="./index.html">click here</a>.
+Dê uma olhada em como ficou a solução, <a href="./index.html" title="Visitar site">clicando aqui</a>.
 
-## 👨‍💻 Author
+## 📍 Me encontre
 
-**Lucas Fernando**
+  Entre em contato comigo diretamente por email ou pelas redes sociais, Dê uma passada no meu Codepen e veja um pouco mais do meu trabalho.
 
-👋 [Github Profile](https://github.com/lucasfernandodev "Lucas Fernando")<br>
-📫 [Send me an email](mailto:lucasfernando.dev0@gmail.com?subject=Hi% "Hi!")<br>
-💻 [Visit portfolio](https://lucasfernandodev.com.br "Welcome")<br>
+<a href="https://www.instagram.com/lucasfernando.dev/" target="_blank" /><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://www.linkedin.com/in/frontlucasfernandodev/" target="_blank" /><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
+<a href="https://codepen.io/lucasfernandodev" target="_blank" /><img src="https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white" alt="Codepen"/></a>
+<a href="mailto:lucasfernando.dev@gmail.com" target="_blank" /><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
