@@ -16,8 +16,6 @@ no desenvolvimento front-end e na revisão de códigos.
 
 
 ## Tecnologias
-Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e testar alguns frameworks e libs.
-
 
 - HMTL
 - CSS
