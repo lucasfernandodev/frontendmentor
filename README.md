@@ -40,21 +40,21 @@ no desenvolvimento front-end e na revisão de códigos.
 | Titulo | Dificuldade | Tecnologias| Pré-visualização |
 |--------|-------------|------------|------------------|
 |3 column preview card component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/3-column-preview-card-component-main/">Ver</a>|
-|NFT preview card component|🔥| HTML & CSS| <a href="/">Ver</a>|
-|Article preview component|🔥| HTML & CSS| <a href="/">Ver</a>|
-|Order summary component|🔥| HTML & CSS| <a href="/">Ver</a>|
-|Base Apparel coming soon page|🔥| HTML & CSS & JS| <a href="/">Ver</a>|
-|Ping single column coming soon page|🔥| HTML & CSS & JS| <a href="/">Ver</a>|
-|FAQ accordion card|🔥| HTML & CSS & JS| <a href="/">Ver</a>|
-|Profile card component|🔥| HTML & CSS| <a href="/">Ver</a>|
-|Four card feature section|🔥| HTML & CSS| <a href="/">Ver</a>|
-|single price grid component |🔥| HTML & CSS| <a href="/">Ver</a>|
-|huddle single introductory section|🔥| HTML & CSS| <a href="/">Ver</a>|
-|Social proof section|🔥| HTML & CSS| <a href="/">Ver</a>|
-|Intro component with sign-up form|🔥| HTML & CSS| <a href="/">Ver</a>|
-|Stats preview card component|🔥| HTML & CSS| <a href="/">Ver</a>|
-|Manage landing page|🔥🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
-|Time tracking dashboard|🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
+|NFT preview card component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/nft-preview-card-component-main">Ver</a>|
+|Article preview component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/article-preview-component-master">Ver</a>|
+|Order summary component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/order-summary-component-main">Ver</a>|
+|Base Apparel coming soon page|🔥| HTML & CSS & JS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/base-apparel">Ver</a>|
+|Ping single column coming soon page|🔥| HTML & CSS & JS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/single-price-grid-component-master">Ver</a>|
+|FAQ accordion card|🔥| HTML & CSS & JS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/faq-accordion-card">Ver</a>|
+|Profile card component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/profile-card">Ver</a>|
+|Four card feature section|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/four-card-feature-section-master ">Ver</a>|
+|single price grid component |🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/single-price-grid-component-master">Ver</a>|
+|huddle single introductory section|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/huddle-single-introductory-section">Ver</a>|
+|Social proof section|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/social-proof-section-master">Ver</a>|
+|Intro component with sign-up form|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/intro-component-with-signup-form-master">Ver</a>|
+|Stats preview card component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/stats-preview-card">Ver</a>|
+|Manage landing page|🔥🔥🔥| HTML & CSS & JS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/manage-landing-page-master">Ver</a>|
+|Time tracking dashboard|🔥🔥| HTML & CSS & JS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/time-tracking-dashboard-main">Ver</a>|
 
 
 ## 🎯 Me Encontre
