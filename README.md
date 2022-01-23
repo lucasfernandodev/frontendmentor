@@ -15,7 +15,7 @@ O frontend Mentor é um site que vem com o objetivo de ajudar pessoas a ganhar e
 no desenvolvimento front-end e na revisão de códigos.
 
 Dê uma olhada no sites deles <a href="https://www.frontendmentor.io//">clicando aqui</a> e participe dessa comunidade!
-<br /><br />
+<br /><hr />
 
 ### Tecnologias
 
@@ -26,8 +26,9 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 - Javascript
 - ReactJS
 <br />
+<hr />
 
-## Nivel de dificuldade
+### Nivel de dificuldade
 
 | Dificuldade | |
 |------|--|
@@ -39,7 +40,7 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 
 
 
-### Projetos
+#### Projetos
 
 | Titulo | Dificuldade | Tecnologias| Pré-visualização |
 |--------|-------------|------------|------------------|
@@ -61,8 +62,9 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 |Time tracking dashboard|🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
 
 <br />
+<hr />
 
-## Me Encontre
+### Me Encontre
 
 <a href="https://www.instagram.com/lucasfernando.dev/" target="_blank" /><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 <a href="https://www.linkedin.com/in/frontlucasfernandodev/" target="_blank" /><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
