@@ -1,13 +1,13 @@
 <p align="center">
 <img src="./docs/images/main.png" alt="screenshot do perfil de projetos no Frontendmentor">
 </p>
-<h2 align="center">Frontendmentor - HUB de Projetos</h2>
+<h1 align="center">Frontendmentor - HUB de Projetos</h1>
 
 <p align="center">
 Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
 </p>
-<hr />
-<br />
+
+
 ## O que é o frontend Mentor?
 
 O frontend Mentor é um site que vem com o objetivo de ajduar pessoas a ganahr experiência
@@ -29,5 +29,11 @@ no desenvolvimento front-end e na revisão de códigos.
 |Intermediário|🔥🔥🔥|
 |Avançado|🔥🔥🔥🔥|
 |Guru|🔥🔥🔥🔥🔥|
+
+## Projetos
+
+| Titulo | Dificuldade | Tecnologias| Pré-visualização |
+|--------|-------------|------------|------------------|
+|3-column preview card component (HTML & CSS)|🔥| HTML & CSS| <a href="/">Ver</a>|
 
 <p align="center">Para ver o preview dos projetos <a href="https://lucasfernandodev.github.io/frontendmentor/">clique aqui</a> ou veja diretamente no meu <a href="https://www.frontendmentor.io/profile/lucasfernandodev">perfil</a> no frontendmentor.</p>
