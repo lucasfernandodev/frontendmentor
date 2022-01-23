@@ -1,5 +1,5 @@
 
-# Frontendmentor - Projetos</h1>
+<h1 align="center">Frontendmentor - Projetos</h1>
 
 <p align="center">
 <img src="./docs/images/main.png" alt="screenshot do perfil de projetos no Frontendmentor">
@@ -7,7 +7,7 @@
 
 
 Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
-<br />
+<br /><br />
 
 ## O que é o frontend Mentor?
 
