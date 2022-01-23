@@ -3,26 +3,31 @@
 </p>
 
 # Frontendmentor - Projetos
-
 Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
 
 
-## O que é o frontend Mentor?
 
+
+## O que é o frontend Mentor?
 O frontend Mentor é um site que vem com o objetivo de ajudar pessoas a ganhar experiência
 no desenvolvimento front-end e na revisão de códigos.
+
 
 Dê uma olhada no sites deles <a href="https://www.frontendmentor.io//">clicando aqui</a> e participe dessa comunidade!
 
 
-## Tecnologias
 
+
+## Tecnologias
 Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e testar alguns frameworks e libs.
+
 
 - HMTL
 - CSS
 - Javascript
 - ReactJS
+
+
 
 
 ## Nivel de dificuldade
@@ -56,6 +61,8 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 |Stats preview card component|🔥| HTML & CSS| <a href="/">Ver</a>|
 |Manage landing page|🔥🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
 |Time tracking dashboard|🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
+
+
 
 
 ## Me Encontre
