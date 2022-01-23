@@ -39,7 +39,7 @@ no desenvolvimento front-end e na revisão de códigos.
 
 | Titulo | Dificuldade | Tecnologias| Pré-visualização |
 |--------|-------------|------------|------------------|
-|3 column preview card component|🔥| HTML & CSS| <a href="./challenge/3-column-preview-card-component-main">Ver</a>|
+|3 column preview card component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenge/-column-preview-card-component-main">Ver</a>|
 |NFT preview card component|🔥| HTML & CSS| <a href="/">Ver</a>|
 |Article preview component|🔥| HTML & CSS| <a href="/">Ver</a>|
 |Order summary component|🔥| HTML & CSS| <a href="/">Ver</a>|
