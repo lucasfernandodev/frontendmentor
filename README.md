@@ -26,7 +26,6 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 - Javascript
 - ReactJS
 
-<br />
 
 ## Nivel de dificuldade
 
@@ -38,7 +37,7 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 |Avançado|🔥🔥🔥🔥|
 |Guru|🔥🔥🔥🔥🔥|
 
-<br />
+
 
 ## Projetos
 
@@ -60,6 +59,8 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 |Stats preview card component|🔥| HTML & CSS| <a href="/">Ver</a>|
 |Manage landing page|🔥🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
 |Time tracking dashboard|🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
+
+<br />
 
 ## Me Encontre
 
