@@ -1,35 +1,37 @@
-body{
+body {
     scroll-behavior: smooth;
     transition: all 350ms linear;
 }
-body::-webkit-scrollbar              { 
+
+body::-webkit-scrollbar {
     width: 0;
     background: hsl(225, 13%, 18%);
     opacity: 0;
     visibility: hidden;
 }
-body::-webkit-scrollbar-button       { 
+
+body::-webkit-scrollbar-button {
     height: 0;
- }
- 
-body::-webkit-scrollbar-thumb        { 
+}
+
+body::-webkit-scrollbar-thumb {
     background: #888;
     opacity: 0;
     visibility: hidden;
 }
 
 
-
-.scrollShow::-webkit-scrollbar              { 
+.scrollShow::-webkit-scrollbar {
     width: 13px;
     opacity: 1;
     visibility: visible;
 }
-.scrollShow::-webkit-scrollbar-button       { 
-    height: 0;
- }
 
-.scrollShow::-webkit-scrollbar-thumb        { 
+.scrollShow::-webkit-scrollbar-button {
+    height: 0;
+}
+
+.scrollShow::-webkit-scrollbar-thumb {
     opacity: 1;
     border-radius: 16px;
     visibility: visible;

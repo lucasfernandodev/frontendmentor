@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
+    <title>Lucas Fernando · Projetos do Frontend Mentor</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,8 @@
                 <img src="./assets/img/favicon.svg" alt="Lucas Fernando">
             </div>
             <div class="social">
-                <a href="https://www.instagram.com/lucasfernandodev/"><img src="./assets/img/instagram.svg" alt="instagram"></a>
+                <a href="https://www.instagram.com/lucasfernandodev/"><img src="./assets/img/instagram.svg"
+                        alt="instagram"></a>
                 <a href="https://github.com/lucasfernandodev"><img src="./assets/img/github.svg" alt="github"></a>
                 <a href="https://dribbble.com/lucasfernandodev"><img src="./assets/img/dribbble.svg" alt="dribbble"></a>
             </div>
@@ -35,74 +36,7 @@
     </main>
 
 
-    <script>
-        const body = document.querySelector('body');
-
-        function debounce(func, wait, immediate) {
-            var timeout;
-            return function () {
-                var context = this, args = arguments;
-                var later = function () {
-                    timeout = null;
-                    if (!immediate) func.apply(context, args);
-                };
-                var callNow = immediate && !timeout;
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-                if (callNow) func.apply(context, args);
-            };
-        };
-
-          function handlerScrool() {
-
-            if (!body.classList.contains('scrollShow')) {
-                body.classList.add('scrollShow');
-
-  
-            }
-
-            window.addEventListener('scroll', debounce(function () {
-                    body.classList.remove('scrollShow');
-                console.log('teste')
-                }, 1000))
-        }
-
-
-
-        window.addEventListener('scroll', (event) => handlerScrool())
-
-
-
-        const projetos = [
-            { path: "3-column-preview-card-component-main", title: "3 column preview card component" },
-            { path: "article-preview-component-master", title: "Article preview component" },
-            { path: "base-apparel", title: "Base Apparel coming soon page" },
-            { path: "faq-accordion-card", title: "FAQ accordion card" },
-            { path: "four-card-feature-section-master", title: "Four card feature section" },
-            { path: "huddle-single-introductory-section", title: "huddle single introductory section" },
-            { path: "intro-component-with-signup-form-master", title: "Intro component with sign-up form" },
-            { path: "nft-preview-card-component-main", title: "NFT preview card component" },
-            { path: "order-summary-component-main", title: "Order summary component" },
-            { path: "ping-coming-soon-page-master", title: "Ping single column coming soon page" },
-            { path: "profile-card", title: "Profile card component" },
-            { path: "single-price-grid-component-master", title: "single price grid component" },
-            { path: "social-proof-section-master", title: "Social proof section" },
-            { path: "stats-preview-card", title: "Stats preview card component" },
-            { path: "time-tracking-dashboard-main", title: "Time tracking dashboard" },
-        ];
-
-        const url = 'https://lucasfernandodev.github.io/frontendmentor/challenges/';
-        // const src ="./challenges/article-preview-component-master/docs/design/desktop-preview.jpg"
-
-        const cards = document.querySelector('.cards');
-
-        for (projeto of projetos) {
-            cards.innerHTML += `<div class="card">
-                <a href="${url + projeto.path}" /><img src="./challenges/${projeto.path}/docs/design/desktop-preview.jpg" /></a>
-                <h2 class="title">${projeto.title}</h2>
-            </div>`
-        }
-    </script>
+    <script type="module" src="./assets/js/main.js"></script>
 </body>
 
 </html>
