@@ -22,7 +22,7 @@ no desenvolvimento front-end e na revisão de códigos.
 ## Nivel de dificuldade
 
 | Dificuldade | - |
-- - - - - - - | - - |
+| - - - - - - | - - |
 |Novato|🔥|
 |Júnior|🔥🔥|
 |Intermediário|🔥🔥🔥|
