@@ -8,7 +8,7 @@ Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
 </p>
 <br />
 
-## O que é frontend Mentor?
+## ❔ O que é frontend Mentor?
 O frontend Mentor é um site que vem com o objetivo de ajudar pessoas a ganhar experiência
 no desenvolvimento front-end e na revisão de códigos.
 
@@ -16,7 +16,7 @@ no desenvolvimento front-end e na revisão de códigos.
 <a href="https://www.frontendmentor.io/">Visitar Frontend Mentor →</a>
 
 
-## Tecnologias
+## ⚡ Tecnologias
 
 - HMTL
 - CSS
@@ -24,7 +24,7 @@ no desenvolvimento front-end e na revisão de códigos.
 - ReactJS
 
 
-## Projetos
+## 👾 Projetos
 
 
 | Dificuldade | |
@@ -58,7 +58,7 @@ no desenvolvimento front-end e na revisão de códigos.
 
 <br />
 
-## Me Encontre
+## 🎯 Me Encontre
 
 <a href="https://www.instagram.com/lucasfernando.dev/" target="_blank" /><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 <a href="https://www.linkedin.com/in/frontlucasfernandodev/" target="_blank" /><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
