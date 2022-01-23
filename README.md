@@ -1,23 +1,21 @@
-
-<h1 align="center">Frontendmentor - Projetos</h1>
-
 <p align="center">
 <img src="./docs/images/main.png" alt="screenshot do perfil de projetos no Frontendmentor">
 </p>
 
+# Frontendmentor - Projetos
 
 Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
-<br /><br />
 
-### O que é o frontend Mentor?
+
+## O que é o frontend Mentor?
 
 O frontend Mentor é um site que vem com o objetivo de ajudar pessoas a ganhar experiência
 no desenvolvimento front-end e na revisão de códigos.
 
 Dê uma olhada no sites deles <a href="https://www.frontendmentor.io//">clicando aqui</a> e participe dessa comunidade!
-<br /><hr />
 
-### Tecnologias
+
+## Tecnologias
 
 Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e testar alguns frameworks e libs.
 
@@ -25,10 +23,9 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 - CSS
 - Javascript
 - ReactJS
-<br />
-<hr />
 
-### Nivel de dificuldade
+
+## Nivel de dificuldade
 
 | Dificuldade | |
 |------|--|
@@ -39,8 +36,7 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 |Guru|🔥🔥🔥🔥🔥|
 
 
-
-#### Projetos
+## Projetos
 
 | Titulo | Dificuldade | Tecnologias| Pré-visualização |
 |--------|-------------|------------|------------------|
@@ -61,10 +57,8 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 |Manage landing page|🔥🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
 |Time tracking dashboard|🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
 
-<br />
-<hr />
 
-### Me Encontre
+## Me Encontre
 
 <a href="https://www.instagram.com/lucasfernando.dev/" target="_blank" /><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 <a href="https://www.linkedin.com/in/frontlucasfernandodev/" target="_blank" /><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
