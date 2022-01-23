@@ -40,7 +40,7 @@ img{
     flex-direction: row;
 }
 
-.main .header{
+.main header{
     position: absolute;
     top: 0;
     left: 0;
@@ -55,31 +55,31 @@ img{
     z-index: 99999
 }
 
-.main .header .brand img{
+.main header .brand img{
     width: 52px;
     height: 52px;
 }
 
-.main .header .social img{
+.main header .social img{
     width: 26px;
     height: 26px;
     opacity: 0.4;
 }
 
-.main .header .social a:hover img{
+.main header .social a:hover img{
     opacity: 1;
     transition: 250ms linear;
 }
 
-@media (max-width: 720px){
+@media (max-width: 550px){
     .main .header{
-        padding: 0 10px;
+        padding: 20px;
     }
+
     .main .header .brand img{
         width: 42px;
         height: 42px;
     }
-    
 }
 
 
@@ -140,15 +140,29 @@ img{
     color: #aaa;
     font-size: 22px;
     font-family: 'PT Sans', sans-serif;
-    text-align: center;
-    display: block;
-    padding: 0 10px;
 }
 
 .welcome img{
-    width: calc(100% - 20px);
     max-width: 450px;
-    margin: 0 auto;
+}
+
+@media (max-width: 650px){
+    .welcome p{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px){
+    .welcome img{
+        width: calc(100% - 60px);
+    }
 }
 
 .cards{
@@ -161,21 +175,11 @@ img{
     align-items: center;
 
 }
-@media (max-width: 720px){
-    .cards{
-        padding: 80px 20px;
-        gap: 18px;
-    }
-}
-
-
 
 .cards .card{
-    width: calc(100% - 20px);
+    width: 100%;
     max-width: 375px;
-    min-height: 380px;
-    height: 100%;
-    max-height: 400px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -185,6 +189,33 @@ img{
     transition: 320ms ease-in-out;
     box-shadow: 4px 7px 15px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.7);
 
+}
+
+@media (max-width: 930px){
+    .cards{
+        padding: 80px 40px;
+        justify-content: center;
+    }
+    .cards .card{
+        max-width: calc((100% / 2) - 80px);
+        height: auto;
+    }
+}
+
+
+@media (max-width: 550px){
+    .cards .card{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 370px){
+    .cards .card{
+        max-width: unset;
+        min-width: unset;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .card:hover{
