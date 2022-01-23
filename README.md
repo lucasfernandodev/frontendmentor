@@ -15,7 +15,7 @@ O frontend Mentor é um site que vem com o objetivo de ajudar pessoas a ganhar e
 no desenvolvimento front-end e na revisão de códigos.
 
 Dê uma olhada no sites deles <a href="https://www.frontendmentor.io//">clicando aqui</a> e participe dessa comunidade!
-<br />
+<br /><br />
 
 ## Tecnologias
 
