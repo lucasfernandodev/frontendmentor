@@ -7,12 +7,12 @@ Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
 <img src="./docs/images/main.png" alt="screenshot do perfil de projetos no Frontendmentor">
 </p>
 
-## O que é o frontend Mentor?
+## O que é frontend Mentor?
 O frontend Mentor é um site que vem com o objetivo de ajudar pessoas a ganhar experiência
 no desenvolvimento front-end e na revisão de códigos.
 
 
-Dê uma olhada no sites deles <a href="https://www.frontendmentor.io//">clicando aqui</a> e participe dessa comunidade!
+<a href="https://www.frontendmentor.io/">Visitar Frontend Mentor →</a>
 
 
 ## Tecnologias
