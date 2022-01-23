@@ -24,7 +24,10 @@ no desenvolvimento front-end e na revisão de códigos.
 - ReactJS
 
 
-## Nivel de dificuldade
+## Projetos
+
+
+##### Nivel do Projeto
 
 | Dificuldade | |
 |------|--|
@@ -35,7 +38,6 @@ no desenvolvimento front-end e na revisão de códigos.
 |Guru|🔥🔥🔥🔥🔥|
 
 
-## Projetos
 
 | Titulo | Dificuldade | Tecnologias| Pré-visualização |
 |--------|-------------|------------|------------------|
