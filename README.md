@@ -3,6 +3,8 @@
 </p>
 <h1 align="center">Frontendmentor - HUB de Projetos</h1>
 
+<br />
+
 <p align="center">
 Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
 </p>
@@ -10,8 +12,10 @@ Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
 
 ## O que é o frontend Mentor?
 
-O frontend Mentor é um site que vem com o objetivo de ajduar pessoas a ganahr experiência
+O frontend Mentor é um site que vem com o objetivo de ajudar pessoas a ganhar experiência
 no desenvolvimento front-end e na revisão de códigos.
+
+<br />
 
 ## Tecnologias Usadas
 
@@ -19,6 +23,8 @@ no desenvolvimento front-end e na revisão de códigos.
 - CSS
 - Javascript
 - ReactJS
+
+<br />
 
 ## Nivel de dificuldade
 
@@ -29,6 +35,8 @@ no desenvolvimento front-end e na revisão de códigos.
 |Intermediário|🔥🔥🔥|
 |Avançado|🔥🔥🔥🔥|
 |Guru|🔥🔥🔥🔥🔥|
+
+<br />
 
 ## Projetos
 
