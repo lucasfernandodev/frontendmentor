@@ -24,7 +24,7 @@ no desenvolvimento front-end e na revisão de códigos.
 - ReactJS
 
 
-## 👾 Projetos
+## 🚀 Projetos
 
 
 | Dificuldade | |
@@ -56,7 +56,6 @@ no desenvolvimento front-end e na revisão de códigos.
 |Manage landing page|🔥🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
 |Time tracking dashboard|🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
 
-<br />
 
 ## 🎯 Me Encontre
 
