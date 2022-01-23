@@ -27,8 +27,6 @@ no desenvolvimento front-end e na revisão de códigos.
 ## Projetos
 
 
-##### Nivel do Projeto
-
 | Dificuldade | |
 |------|--|
 |Novato|🔥|
