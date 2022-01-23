@@ -5,8 +5,6 @@
 # Frontendmentor - Projetos</h1>
 
 Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
-
-
 <br />
 
 ## O que é o frontend Mentor?
@@ -25,7 +23,7 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 - CSS
 - Javascript
 - ReactJS
-
+<br />
 
 ## Nivel de dificuldade
 
