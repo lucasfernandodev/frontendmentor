@@ -14,9 +14,12 @@ Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
 O frontend Mentor é um site que vem com o objetivo de ajudar pessoas a ganhar experiência
 no desenvolvimento front-end e na revisão de códigos.
 
+Dê uma olhada no sites deles <a href="https://www.frontendmentor.io//">clicando aqui</a> e participe dessa comunidade!
 <br />
 
-## Tecnologias Usadas
+## Tecnologias
+
+Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e testar alguns frameworks e libs.
 
 - HMTL
 - CSS
