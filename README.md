@@ -3,12 +3,11 @@
 </p>
 <h1 align="center">Frontendmentor - HUB de Projetos</h1>
 
-<br />
-
 <p align="center">
 Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
 </p>
 
+<br />
 
 ## O que é o frontend Mentor?
 
