@@ -1,11 +1,11 @@
 <p align="center">
 <img src="./docs/images/main.png" alt="screenshot do perfil de projetos no Frontendmentor">
 </p>
-<h1 align="center">Frontendmentor - HUB de Projetos</h1>
 
-<p align="center">
+# Frontendmentor - Projetos</h1>
+
 Esse é um repositorio organizado com todos os meus projetos do Frontend Mentor.
-</p>
+
 
 <br />
 
@@ -61,5 +61,9 @@ Estou começando a desenvolver os sites com o basico HTML, CSS, Javascript e tes
 |Manage landing page|🔥🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
 |Time tracking dashboard|🔥🔥| HTML & CSS & JS| <a href="/">Ver</a>|
 
+## Me Encontre
 
-<p align="center">Para ver o preview dos projetos <a href="https://lucasfernandodev.github.io/frontendmentor/">clique aqui</a> ou veja diretamente no meu <a href="https://www.frontendmentor.io/profile/lucasfernandodev">perfil</a> no frontendmentor.</p>
+<a href="https://www.instagram.com/lucasfernando.dev/" target="_blank" /><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://www.linkedin.com/in/frontlucasfernandodev/" target="_blank" /><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
+<a href="https://codepen.io/lucasfernandodev" target="_blank" /><img src="https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white" alt="Codepen"/></a>
+<a href="mailto:lucasfernando.dev@gmail.com" target="_blank" /><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
