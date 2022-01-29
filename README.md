@@ -54,7 +54,7 @@ no desenvolvimento front-end e na revisão de códigos.
 |Intro component with sign-up form|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/intro-component-with-signup-form-master">Ver</a>|
 |Stats preview card component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/stats-preview-card">Ver</a>|
 |Time tracking dashboard|🔥🔥| HTML & CSS & JS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/time-tracking-dashboard-main">Ver</a>|
-
+|E-commerce product page|🔥🔥🔥|HTML & CSS & JS & Reactjs & Typescript|<a href="https://sneakears.netlify.app">Ver</a>|
 
 ## 🎯 Me Encontre
 
