@@ -1,0 +1,146 @@
+.basket{
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  position: relative;
+  z-index: 10;
+}
+
+.basket img{
+  max-width: 100%;
+  height: auto;
+}
+
+.basket-show{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
+.show .basket-show{
+  max-width: 450px;
+  max-height: 450px;
+}
+
+ 
+
+.basket-slider{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+.basket-slider-item{
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  border-radius: 16px;
+  background: transparent;
+  position: relative;
+}
+
+.basket-slider-item::before{
+  content: "";
+  width:100%;
+  height:100%;
+  display: block;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.basket-slider-item img{
+  border-radius: 8px;
+  border: 2px solid transparent;
+}
+
+.basket-slider-item:not(.active):hover::before{
+  background: #fff;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  margin: 1.5px;
+}
+
+.basket .basket-slider-item:hover img{
+  border: 2px solid var(--color-primary);
+  opacity: 0.5 !important;
+}
+
+.basket .basket-slider-control{
+  width: 100%;
+  min-width: 480px;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  margin-top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+}
+
+.basket .basket-slider-control .icon-prev, .basket .basket-slider-control .icon-next{
+  width: 38px;
+  height: 38px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+}
+
+@media (max-width: 818px){
+  .basket{
+    margin: 0 auto;
+    max-width: 100%;
+    border: 0px;
+    background: #fff;
+  }
+
+  .basket .basket-slider-control{
+    min-width: 0;
+    max-width: 330px;
+  }
+  
+  .basket .basket-slider-item{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+@media (max-width: 550px){
+  .basket{
+    width: 100%;
+    max-width: unset;
+  }
+
+  .basket .basket-slider-control{
+    min-width: 0;
+    max-width: calc(100% - 30px);
+  }
+  .basket .basket-show{
+    max-width: 100%;
+    max-height: 450px;
+    border-radius: 0;
+  }
+}

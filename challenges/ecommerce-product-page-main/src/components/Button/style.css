@@ -1,0 +1,23 @@
+.button{
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  height: 56px;
+  font-family: 'Kumbh Sans', sans-serif;
+  min-width: 210px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 10px 5px hsla(26, 100%, 55%, 0.1);
+  transition: 250ms linear;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover{
+  opacity: 0.6;
+}

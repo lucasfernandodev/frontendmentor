@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color-primary: hsl(26, 100%, 55%);
+  --color-primary-light: hsl(25, 100%, 94%);
+
+  --color-white: hsl(0, 0%, 100%);
+
+  --Very-vark-blue: hsl(220, 13%, 13%);
+  --color-Light-grayish-blue: hsl(223, 64%, 98%);
+  --color-Dark-grayish-blue: hsl(219, 9%, 45%);
+  --color-Grayish-blue: hsl(220, 14%, 75%);
+  --color-Black: rgba(0, 0, 0, 0.75);
+}
+
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
