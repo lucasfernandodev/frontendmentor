@@ -53,11 +53,13 @@ const Cart: FunctionComponent<typeCart & React.HTMLAttributes<HTMLDivElement>> =
 
           </div>
           <div className="cart-product-remove">
-            <button onClick={() => clearCart && clearCart()}><img src={iconDel} alt="Remove product from cart" /></button>
+            <button onClick={() => clearCart && clearCart()} aria-label="Remove product from cart">
+              <img src={iconDel} alt="Remove product from cart" />
+            </button>
           </div>
         </div>
         <div className="cart-checkout">
-          <Button>Checkout</Button>
+          <Button aria-label="Checkout">Checkout</Button>
         </div>
       </div>
     </div>

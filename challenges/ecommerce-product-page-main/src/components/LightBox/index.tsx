@@ -5,7 +5,7 @@ const LightBox = ({parent} : {parent : () => void}) => {
     <div className="lightbox">
      
       <div className="basket-view">
-      <button className="icon" onClick={() => parent()}>
+      <button className="icon" onClick={() => parent()} aria-label="Close LightBox">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
           <path
             fill="#fff"

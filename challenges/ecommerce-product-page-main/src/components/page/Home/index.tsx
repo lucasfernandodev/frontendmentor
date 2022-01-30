@@ -81,8 +81,8 @@ const Home = () => {
       <header className="header">
 
         <div className="wrapper">
-          <button className='btn-menu' onClick={() => toggleNavbar()}>
-            <img src={showNavbar === true ? inconClose : iconMenu} />
+          <button className='btn-menu' onClick={() => toggleNavbar()} aria-label="Toggle Menu">
+            <img src={showNavbar === true ? inconClose : iconMenu} alt="Toggle Menu"/>
           </button>
           <div className="brand">
             <img src={Brand} alt="brand sneakers" />
@@ -92,8 +92,8 @@ const Home = () => {
         </div>
 
         <div className="wrapper">
-          <button className="btn-cart" onClick={() => toggleCard()}>
-            <img src={iconCart} />
+          <button className="btn-cart" onClick={() => toggleCard()} aria-label="shopping cart">
+            <img src={iconCart} alt="shopping cart"/>
             {cartItem !== 0 && (
               <span className='cart-notify'>{cartItem}</span>
             )}
@@ -145,16 +145,19 @@ const Home = () => {
           </div>
           <div className="product-add-cart">
             <div className="increase-item">
-              <button onClick={e => removeProduct(e)}>
+              <button onClick={e => removeProduct(e)} aria-label="remove item from cart">
                 <img src={iconMinus} alt="remove item from cart" />
               </button>
               <span>{qtdProduct}</span>
-              <button onClick={e => addProduct(e)}>
+              <button onClick={e => addProduct(e)} aria-label="add item to cart">
                 <img src={iconPlus} alt="add item to cart" />
               </button>
             </div>
             <div className="add-cart">
-              <Button onClick={() => addProductCart()}><img src={iconCartwhite} alt="Add to Cart" />Add to cart</Button>
+              <Button onClick={() => addProductCart()} aria-label="Add to Cart">
+                <img src={iconCartwhite} alt="Add to Cart" />
+                Add to cart
+              </Button>
             </div>
           </div>
         </section>

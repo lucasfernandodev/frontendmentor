@@ -106,7 +106,7 @@ const Basket = ({ show, onLight }: { show?: boolean, onLight?: () => void }) => 
       {showControl === true && (
 
         <div className="basket-slider-control">
-          <button className="icon-prev" onClick={() => scrollImage('prev')}>
+          <button className="icon-prev" onClick={() => scrollImage('prev')} aria-label="back image">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18px">
               <path
                 fill="none"
@@ -116,7 +116,7 @@ const Basket = ({ show, onLight }: { show?: boolean, onLight?: () => void }) => 
               ></path>
             </svg>
           </button>
-          <button className="icon-next" onClick={() => scrollImage('next')}>
+          <button className="icon-next" onClick={() => scrollImage('next')} aria-label="next image">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18px">
               <path
                 fill="none"
