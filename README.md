@@ -39,6 +39,7 @@ no desenvolvimento front-end e na revisão de códigos.
 
 | Titulo | Dificuldade | Tecnologias| Pré-visualização |
 |--------|-------------|------------|------------------|
+|QR code component|🔥| HTML & CSS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/qr-code-component-main/">Ver</a>|
 |3 column preview card component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/3-column-preview-card-component-main/">Ver</a>|
 |NFT preview card component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/nft-preview-card-component-main">Ver</a>|
 |Article preview component|🔥| HTML & CSS| <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/article-preview-component-master">Ver</a>|
