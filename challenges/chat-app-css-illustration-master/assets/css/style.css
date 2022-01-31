@@ -263,7 +263,7 @@ body::after {
   opacity: 0.5;
 }
 
-.mockup main {
+.mockup .main {
   height: calc(100% - 56px);
   width: calc(100% + 2px);
   background: hsl(270, 20%, 96%);
@@ -280,7 +280,7 @@ body::after {
 }
 
 
-.mockup main .message-content:not([data-received="true"]) {
+.mockup .main .message-content:not([data-received="true"]) {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -288,15 +288,15 @@ body::after {
 
 }
 
-.mockup main .message-content:not([data-received="true"])+.message-content[data-received="true"] {
+.mockup .main .message-content:not([data-received="true"])+.message-content[data-received="true"] {
   margin-top: 8px;
 }
 
-.mockup main .message-content[data-received="true"]+.message-content:not([data-received="true"]) {
+.mockup .main .message-content[data-received="true"]+.message-content:not([data-received="true"]) {
   margin-top: 8px;
 }
 
-.mockup main .message-content p {
+.mockup .main .message-content p {
   font-size: 10px;
   max-width: 70%;
   background: #EEE6F5;
@@ -305,27 +305,27 @@ body::after {
   color: hsl(276, 55%, 52%);
 }
 
-.mockup main .message-content[data-image="true"] p {
+.mockup .main .message-content[data-image="true"] p {
   display: flex;
 
   gap: 12px;
   background: none;
 }
 
-.mockup main .message-content img {
+.mockup .main .message-content img {
   width: 40px;
   height: 40px;
   border-radius: 8px;
 }
 
-.mockup main .message-content:not([data-received="true"]) p {
+.mockup .main .message-content:not([data-received="true"]) p {
   display: flex;
   align-items: center;
   max-width: 70%;
   color: hsl(271, 15%, 43%);
 }
 
-.mockup main .message-content[data-received="true"][data-price="true"] p {
+.mockup .main .message-content[data-received="true"][data-price="true"] p {
   height: 32px;
   background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   color: #fff;
@@ -336,12 +336,12 @@ body::after {
   max-width: 80%;
 }
 
-.mockup main .message-content[data-received="true"][data-price="true"] p span:first-child {
+.mockup .main .message-content[data-received="true"][data-price="true"] p span:first-child {
   padding-left: 16px;
   position: relative;
 }
 
-.mockup main .message-content[data-received="true"][data-price="true"] p span:first-child::before {
+.mockup .main .message-content[data-received="true"][data-price="true"] p span:first-child::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -353,12 +353,12 @@ body::after {
   left: -4px;
 }
 
-.mockup main .message-content[data-received="true"][data-price="true"] p .price {
+.mockup .main .message-content[data-received="true"][data-price="true"] p .price {
   font-weight: bold;
   font-size: 13px
 }
 
-.mockup main .message-content:not([data-received="true"], [data-image="true"]) p {
+.mockup .main .message-content:not([data-received="true"], [data-image="true"]) p {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   background: hsl(270, 20%, 96%);
 }
