@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  </style>
+</head>
+
+<body>
+
+
+
+  <main class="welcome">
+    <aside>
+      <section class="mockup">
+        <span class="mockup-header"></span>
+        <header>
+
+          <div class="content">
+            <div class="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke-width="4"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <polyline points="15 6 9 12 15 18"></polyline>
+              </svg>
+            </div>
+            <div class="user">
+              <img src="./assets/images/avatar.jpg" alt="Samuel Green" class="avatar">
+              <div class="user-info">
+                <span class="user-name">Samuel Green</span>
+                <span class="user-status">
+                  Available to Walk
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="setting">
+            <svg width="2" height="8" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="2" height="2" fill="white"/>
+              <rect y="3" width="2" height="2" fill="white"/>
+              <rect y="6" width="2" height="2" fill="white"/>
+              </svg>
+              
+          </div>
+        </header>
+        <main>
+          <div class="message-content" data-received="true">
+            <p>That sounds great. I’d be happy with that.</p>
+          </div>
+          <div class="message-content" data-received="true">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="message-content" data-image="true">
+            <p>
+              <img src="./assets/images/dog-image-1.jpg" alt="dog image">
+              <img src="./assets/images/dog-image-2.jpg" alt="dog image">
+              <img src="./assets/images/dog-image-3.jpg" alt="dog image">
+            </p>
+          </div>
+          <div class="message-content">
+            <p> Here are a few pictures. She’s a happy girl!</p>
+          </div>
+          <div class="message-content">
+            <p>Can you make it?</p>
+          </div>
+          <div class="message-content" data-received="true">
+            <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+          </div>
+          <div class="message-content" data-received="true" data-price="true">
+            <p>
+              <span> 30 minute walk</span>
+              <span class="price">$29</span>
+            </p>
+          </div>
+          <div class="message-content" data-received="true" data-price="true">
+            <p>
+              <span>1 hour walk</span>
+              <span class="price">$49</span>
+            </p>
+          </div>
+
+          <form class="message-send">
+            <div class="group">
+              <input type="text" placeholder="Type a message..">
+              <button class="btn-send" aria-label="send message">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="4"
+                  stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <polyline points="9 6 15 12 9 18"></polyline>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </main>
+      </section>
+    </aside>
+    <section>
+     <div class="text">
+      <h1>Simple booking</h1>
+
+      <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.</p>
+     </div>
+    </section>
+  </main>
+
+
+
+
+  <script>
+    const btnSend = document.querySelector('.btn-send');
+    btnSend.addEventListener('click', (event) => {
+      event.preventDefault()
+    })
+  </script>
+</body>
+
+</html>
