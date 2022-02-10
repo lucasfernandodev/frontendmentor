@@ -240,6 +240,7 @@ input.addEventListener("keyup", (e) => {
     ]);
 
     showSizeTodoList.innerHTML = Todo.viewTaskListSize();
+    input.value = ''
   }
 });
 
