@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dark-theme {
+  --bg: hsl(235, 21%, 11%);
+  --bg-input: hsl(235, 24%, 19%);
+  --color-text: hsl(234, 39%, 85%);
+  --color-placeholder: hsl(234, 11%, 52%);
+  --color-text-checked: hsl(233, 14%, 35%);
+  --color-border: hsl(237, 14%, 26%);
+  --color-title: hsl(236, 33%, 92%);
+  --color-primary: hsl(220, 98%, 61%);
+
+  --image-bg: url(../images/bg-mobile-dark.jpg);
+  --image-bg-desktop: url(../images/bg-desktop-dark.jpg);
+  --color-link: hsl(236, 33%, 92%);
+}
+
+.light-theme{
+  --bg: hsl(0, 0%, 98%);
+  --bg-input: hsl(0, 0%, 98%);
+  --color-text: hsl(235, 19%, 35%);
+  --color-placeholder: hsl(236, 9%, 61%);
+  --color-text-checked: hsl(233, 11%, 84%);
+  --color-border: hsl(233, 11%, 84%);
+  --color-title: hsl(0, 0%, 98%);
+  --color-primary: hsl(220, 98%, 61%);
+
+  --image-bg: url(../images/bg-mobile-light.jpg);
+  --image-bg-desktop: url(../images/bg-desktop-light.jpg);
+  --color-link: hsl(235, 19%, 35%);
+}
+
+body,
+button,
+input {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+button,
+input,
+input::placeholder {
+  background: unset;
+  border: unset;
+  outline: unset;
+  color: var(--color-placeholder);
+}
+
+body {
+  font-size: 16px;
+
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  background: var(--image-bg);
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+  background-color: var(--bg);
+  object-fit: cover;
+}
+
+.app {
+  width: 327px;
+  margin-top: 47px;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+}
+
+@media (min-width: 376px) {
+  body {
+    background: var(--image-bg-desktop);
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+    background-color: var(--bg);
+    object-fit: cover;
+  }
+
+  .app {
+    width: clamp(327px, calc(100% - 40px), 540px);
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 430px) {
+  body {
+    background-size: 100% 250px;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    background-size: 100% 300px;
+  }
+  .app {
+    margin-top: 80px;
+  }
+}
+
+.app header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 21px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 500px) {
+  .app header {
+    margin-bottom: 50px;
+  }
+}
+
+.app header h1 {
+  color: var(--color-title);
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.app header img {
+  width: 20px;
+  height: 20px;
+}
+
+.app .todo {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+@media (min-width: 500px) {
+  .app .todo {
+    gap: 24px;
+  }
+}
+
+.app .todo .todo-header {
+  height: 47px;
+  position: relative;
+}
+
+.app .todo .todo-header label {
+  visibility: hidden;
+  display: none;
+}
+
+.app .todo .todo-header input {
+  background: var(--bg-input);
+  height: 47px;
+  width: 100%;
+  padding-left: 50px;
+  font-size: 16px;
+  color: var(--color-text);
+  border-radius: 4px;
+}
+
+.app .todo .todo-header input::placeholder{
+  color: var(--color-placeholder);
+}
+
+@media (min-width: 500px){
+  .app .todo .todo-header {
+    height: 64px;
+  }
+  .app .todo .todo-header input {
+    height: 64px;
+  }
+}
+
+.app .todo .todo-header .process {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app .todo .todo-header .process .check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--color-placeholder);
+}
+
+.app .todo .todo-wrapper {
+  width: 100%;
+  background: var(--bg-input);
+  position: relative;
+  border-radius: 4px;
+}
+
+.app .todo .todo-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  list-style: none;
+}
+
+.app .todo .todo-wrapper ul .dragglabe {
+  height: 52px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 50px;
+  position: relative;
+}
+
+@media (min-width: 500px){
+  .app .todo .todo-wrapper ul .dragglabe{
+    height: 64px;
+  }
+}
+
+.app .todo .todo-wrapper ul li .currentTask {
+  font-weight: 500;
+}
+
+.app .todo .todo-wrapper ul li.active .currentTask {
+  text-decoration: line-through;
+  color: var(--color-text-checked);
+}
+
+.app .todo .todo-wrapper ul .dragglabe .status,
+.app .todo .todo-wrapper ul .dragglabe .close {
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app .todo .todo-wrapper ul .dragglabe .status {
+  left: 0;
+}
+
+/* Check button */
+.app .todo .todo-wrapper ul .dragglabe .status .check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--color-placeholder);
+  cursor: pointer;
+}
+
+.app .todo .todo-wrapper ul .dragglabe .status .check:hover {
+  background: linear-gradient(to left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  position: relative;
+  z-index: 8;
+}
+
+.app
+  .todo
+  .todo-wrapper
+  ul
+  .dragglabe
+  .status
+  .check:not(.active):hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-input);
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.app .todo .todo-wrapper ul .dragglabe .status .check.active {
+  background: linear-gradient(to left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  z-index: 10;
+  position: relative;
+}
+
+.app .todo .todo-wrapper ul .dragglabe .status .check.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  border-radius: 50%;
+  background-image: url("../images/icon-check.svg");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center center;
+  z-index: 100;
+}
+
+/* Check button */
+
+.app .todo .todo-wrapper ul .dragglabe .close {
+  right: 0;
+}
+
+.app .todo .todo-wrapper ul .dragglabe .close img {
+  width: 15px;
+  height: 15px;
+  transition: 250ms lienar;
+}
+
+.app .todo .todo-wrapper ul .dragglabe .close img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.app .todo .todo-wrapper .control-buttons {
+  position: absolute;
+  left: 0;
+  bottom: -72px;
+  height: 52px;
+  background: var(--bg-input);
+  color: var(--color-placeholder);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 18px;
+}
+
+@media (min-width: 500px){
+  .app .todo .todo-wrapper .control-buttons{
+    position: unset;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: usnet;
+    width: auto;
+    height: 100%;
+  }
+}
+
+.app .todo .todo-wrapper .control-buttons button {
+  font-weight: bold;
+}
+
+.app .todo .todo-wrapper .control-buttons button.active {
+  color: var(--color-primary);
+}
+
+.app .todo .todo-wrapper .todo-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  padding: 0 16px;
+  font-size: 14px;
+  color: var(--color-placeholder);
+}
+
+.app footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 100px 0;
+  padding-bottom: 50px;
+  justify-content: center;
+  max-width: 100%;
+  color: var(--color-placeholder);
+}
+
+.enter {
+  background: rgba(200, 250, 200, 0.3);
+}
+
+button {
+  cursor: pointer;
+  transition: 250ms linear;
+}
+
+button:hover {
+  color: var(--color-link);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="dark-theme main">
+
+  <main class="app">
+    <header>
+      <div class="brand">
+        <h1>Todo</h1>
+      </div>
+      <div class="toggle-theme">
+        <button class="toggle" aria-label="button toggle theme">
+          <img src="./assets/images/icon-sun.svg" alt="image of an icon with the sun" />
+        </button>
+      </div>
+    </header>
+
+
+    <section class="todo">
+
+      <div class="todo-header">
+        <form class="form-action">
+          <div class="form-group">
+            <label for="newTodo" class="form-label">Create a new todo</label>
+            <input id="newTodo" type="text" class="newTodo" placeholder="Create a new todo">
+            <button class="process">
+              <span class="check"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="todo-wrapper">
+        <div class="todo-board">
+          <ul id="dropzone">
+          
+          </ul>
+        </div>
+
+
+        <div class="todo-control">
+          <div class="control-show">
+            <span class="count"></span> items left
+          </div>
+          <div class="control-buttons">
+            <button data-target="all" class="active">All</button>
+            <button data-target="active">Active</button>
+            <button data-target="completed">Completed</button>
+          </div>
+          <div class="control-clear">
+            <button class="clear-list">Clear Completed</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      Drag and drop to reorder list
+    </footer>
+  </main>
+
+  <script type="module" src="./assets/js/main.js" defer></script>
+</body>
+</html>
