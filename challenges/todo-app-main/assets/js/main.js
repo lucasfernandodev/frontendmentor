@@ -89,8 +89,42 @@ const Todo = {
     showSizeTodoList.innerHTML = Todo.viewTaskListSize();
   },
 
-  clearList: () => {
-    Todo.storeTasks.length = 0;
+  deleteAllCompletedTasks: () => {
+
+    const filterCompletedTasks = (task) =>{
+      return task.status === true && task;
+    }
+
+    const TasksCompleted = Todo.storeTasks.filter(filterCompletedTasks);
+
+    TasksCompleted.forEach((Task) => {
+      const index = Task.Element.querySelector(".close img") .dataset.index;
+      
+
+      Todo.storeTasks.splice(index, 1);
+
+      Todo.storeTasks = Todo.storeTasks.map((item, index) => {
+
+        item.Element.setAttribute(
+          "data-index",
+          index
+        );
+  
+        item.Element.querySelector(".status .check").setAttribute(
+          "data-index",
+          index
+        );
+  
+        item.Element.querySelector(".close img").setAttribute(
+          "data-index",
+          index
+        );
+  
+        Todo.IndexCurrentTak = 0
+        return item;
+      });
+
+    });
   },
 };
 
@@ -249,8 +283,12 @@ controlButton.forEach((element) => {
 });
 
 buttonClearList.addEventListener('click', () => {
-  Todo.clearList();
-  Todo.updateListDom(Todo.storeTasks);
+  Todo.deleteAllCompletedTasks();
+  Todo.updateListDom(Todo.storeTasks, [
+    Todo.viewTaskListSize
+  ]);
+
+  showSizeTodoList.innerHTML = Todo.viewTaskListSize();
 })
 
 ToggleTheme.addEventListener('click', (event) => {
@@ -260,10 +298,10 @@ ToggleTheme.addEventListener('click', (event) => {
   if(body.classList.contains('dark-theme')){
     body.classList.add('light-theme');
     body.classList.remove('dark-theme');
-    event.target.setAttribute('src', '/assets/images/icon-moon.svg');
+    event.target.setAttribute('src', './assets/images/icon-moon.svg');
   }else{
     body.classList.add('dark-theme');
     body.classList.remove('light-theme');
-    event.target.setAttribute('src', '/assets/images/icon-sun.svg');
+    event.target.setAttribute('src', './assets/images/icon-sun.svg');
   }
 })

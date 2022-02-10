@@ -9,7 +9,7 @@ const TaskTemplate =  (currentTask, index) => {
     <span class="currentTask">${currentTask}</span>
 
     <div class="close" aria-label="Remove item from list">
-      <img src="/assets/images/icon-cross.svg" alt="Remove item from list" data-index="${index}">
+      <img src="./assets/images/icon-cross.svg" alt="Remove item from list" data-index="${index}">
     </div>
   </div>
   `;
