@@ -7,6 +7,7 @@
 .dark-theme {
   --bg: hsl(235, 21%, 11%);
   --bg-input: hsl(235, 24%, 19%);
+  --bg-task: rgba(200, 250, 200, 0.3);
   --color-text: hsl(234, 39%, 85%);
   --color-placeholder: hsl(234, 11%, 52%);
   --color-text-checked: hsl(233, 14%, 35%);
@@ -22,6 +23,7 @@
 .light-theme{
   --bg: hsl(0, 0%, 98%);
   --bg-input: hsl(0, 0%, 98%);
+  --bg-task: rgba(200, 250, 200, 1);
   --color-text: hsl(235, 19%, 35%);
   --color-placeholder: hsl(236, 9%, 61%);
   --color-text-checked: hsl(233, 11%, 84%);
@@ -314,7 +316,7 @@ body {
 }
 
 .app .todo .todo-wrapper ul .dragglabe .close img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
   cursor: pointer;
 }
 
@@ -376,7 +378,7 @@ body {
 }
 
 .enter {
-  background: rgba(200, 250, 200, 0.3);
+  background: var(--bg-task);
 }
 
 button {
