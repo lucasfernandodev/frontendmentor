@@ -22,23 +22,23 @@
         <h1>Todo</h1>
       </div>
       <div class="toggle-theme">
-        <button class="toggle" aria-label="button toggle theme">
+        <button class="toggle" aria-label="toggle-theme">
           <img src="./assets/images/icon-sun.svg" alt="image of an icon with the sun" />
         </button>
       </div>
     </header>
 
 
-    <section class="todo">
+    <aside class="todo">
 
       <div class="todo-header">
         <form class="form-action">
           <div class="form-group">
             <label for="newTodo" class="form-label">Create a new todo</label>
-            <input id="newTodo" type="text" class="newTodo" placeholder="Create a new todo">
-            <button class="process" aria-hidden="true">
+            <input id="newTodo" type="text" class="newTodo" placeholder="Create a new todo..">
+            <div class="process" aria-hidden="true">
               <span class="check"></span>
-            </button>
+            </div>
           </div>
         </form>
       </div>
@@ -65,12 +65,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </aside>
     <footer>
       Drag and drop to reorder list
     </footer>
   </main>
 
-  <script type="module" src="./assets/js/main.js" defer="true"></script>
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
