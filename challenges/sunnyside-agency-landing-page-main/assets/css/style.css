@@ -101,7 +101,7 @@ a {
   display: none;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 550px) {
   .header .menu-show {
     display: flex;
     position: fixed;
@@ -484,7 +484,22 @@ a {
   filter: brightness(13);
 }
 
-@media (min-width: 421px) {
+
+
+@media (min-width: 721px) and (max-width: 1100px){
+  .main .About .about-item .wrapper-text {
+    padding: 50px;
+  }
+}
+
+
+
+@media (min-width: 550px) {
+  .header {
+    height: 110px;
+    align-items: center;
+  }
+  
   .header .toggle-menu {
     background: none;
     cursor: pointer;
@@ -621,5 +636,17 @@ a {
     height: 450px;
     display: block;
     background-size: cover;
+  }
+}
+
+
+
+@media (min-width: 375px) and (max-width: 720px){
+  .header nav ul{
+    gap: 25px;
+  }
+  
+  .main .About .about-item .wrapper-text {
+    padding: 50px 30px;
   }
 }
