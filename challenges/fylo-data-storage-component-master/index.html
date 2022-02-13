@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Fylo data storage component</title>
 
-  You’ve used 815 GB of your storage
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+
+  <body>
+
+    <script>
+     console.log(document.querySelector('body').style.backgroundPosition);
+    </script>
+    <main class="main">
+      <section class="card-main">
+        <h1 class="logo">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+        </h1>
+        <ul class="option">
+          <li class="option-item" aria-label="files">
+            <img src="./assets/images/icon-document.svg" alt="files" />
+          </li>
+          <li class="option-item" aria-label="folders">
+            <img src="./assets/images/icon-folder.svg" alt="folders" />
+          </li>
+          <li class="option-item">
+            <img src="./assets/images/icon-upload.svg" alt="upload" />
+          </li>
+        </ul>
+      </section>
+
+      <article class="card-state">
+        <form>
+          <label for="storage"
+            >You’ve used <span class="value">815 GB</span> of your
+            storage</label
+          >
+          <div class="slider-tooltip-info">
+            <h2>185</h2>
+            <span>GB LEFT</span>
+          </div>
+          <div class="slider">
+            <div class="track">
+              <span class="pointer"></span>
+            </div>
+          </div>
+          <div class="slider-info">
+            <span class="min">0 GB</span>
+            <div class="max">1000 GB</div>
+          </div>
+        </form>
+      </article>
+    </main>
+  </body>
 </html>
