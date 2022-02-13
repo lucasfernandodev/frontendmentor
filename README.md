@@ -51,7 +51,8 @@ no desenvolvimento front-end e na revisão de códigos.
 | Time tracking dashboard             | 🔥🔥        | HTML & CSS & JS                        | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/time-tracking-dashboard-main">Ver</a>            |
 | E-commerce product page             | 🔥🔥🔥      | HTML & CSS & JS & Reactjs & Typescript | <a href="https://sneakears.netlify.app">Ver</a>                                                                        |
 | Chat app CSS illustration           | 🔥🔥🔥      | HTML & CSS & JS                        | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/chat-app-css-illustration-master/">Ver</a>       |
-| Todo app solution |🔥🔥🔥| HTML & CSS & JS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/todo-app-main/">Ver</a>|
+| Todo app solution                   | 🔥🔥🔥      | HTML & CSS & JS                        | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/todo-app-main/">Ver</a>                          |
+| Sunnyside agency landing page | 🔥🔥 | HTML & CSS & JS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/sunnyside-agency-landing-page-main/">Ver</a>|
 ## 🎯 Me Encontre
 
 <a href="https://www.instagram.com/lucasfernando.dev/" target="_blank" /><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
