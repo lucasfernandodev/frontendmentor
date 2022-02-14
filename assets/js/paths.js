@@ -14,6 +14,12 @@ const Paths = [
     { id: "social-proof-section-master", title: "Social proof section" },
     { id: "stats-preview-card", title: "Stats preview card component" },
     { id: "time-tracking-dashboard-main", title: "Time tracking dashboard" },
+
+    { id: "ecommerce-product-page-main", title: "E-commerce product page" },
+    { id: "chat-app-css-illustration-master", title: "Chat app CSS illustration" },
+    { id: "todo-app-main", title: "Todo app solution" },
+    { id: "sunnyside-agency-landing-page-main", title: "Sunnyside agency landing page" },
+    { id: "fylo-data-storage-component-master", title: "Fylo data storage component" },
 ];
 
 export default Paths;

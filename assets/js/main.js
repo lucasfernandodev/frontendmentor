@@ -14,11 +14,20 @@ const url = 'https://lucasfernandodev.github.io/frontendmentor/challenges/';
 
 // Carrega os carfs
 for (let path of Paths) {
-    cards.innerHTML += `
+
+    if(path.id === 'ecommerce-product-page-main'){
+        cards.innerHTML += `
+        <div class="card">
+            <a href="https://sneakears.netlify.app" /><h2 class="title">${path.title}</h2></a>
+            <img src="./challenges/${path.id}/docs/design/desktop-preview.jpg" alt="${path.title}" loading="lazy"/>
+        </div>`
+    }else{
+        cards.innerHTML += `
         <div class="card">
             <a href="${url + path.id}" /><h2 class="title">${path.title}</h2></a>
             <img src="./challenges/${path.id}/docs/design/desktop-preview.jpg" alt="${path.title}" loading="lazy"/>
         </div>`
+    }
 }
 
 
