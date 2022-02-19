@@ -9,10 +9,10 @@ window.addEventListener('scroll', () => toggleScroll())
 // Seleciona o container que vai os cards
 const cards = document.querySelector('.cards');
 
-// Pega a url de onde está os projestos
+// Pega a url de onde está os projetos
 const url = 'https://lucasfernandodev.github.io/frontendmentor/challenges/';
 
-// Carrega os carfs
+// Carrega os cards
 for (let path of Paths) {
 
     if(path.id === 'ecommerce-product-page-main'){

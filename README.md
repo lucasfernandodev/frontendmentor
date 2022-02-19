@@ -16,7 +16,7 @@ no desenvolvimento front-end e na revisão de códigos.
 
 ## ⚡ Tecnologias
 
-- HMTL
+- HTML
 - CSS
 - Javascript
 - ReactJS
@@ -51,12 +51,12 @@ no desenvolvimento front-end e na revisão de códigos.
 | Intro component with sign-up form   | 🔥          | HTML & CSS                             | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/intro-component-with-signup-form-master">Ver</a> |
 | Stats preview card component        | 🔥          | HTML & CSS                             | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/stats-preview-card">Ver</a>                      |
 | Time tracking dashboard             | 🔥🔥        | HTML & CSS & JS                        | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/time-tracking-dashboard-main">Ver</a>            |
-| E-commerce product page             | 🔥🔥🔥      | HTML & CSS & JS & Reactjs & Typescript | <a href="https://sneakears.netlify.app">Ver</a>                                                                        |
+| E-commerce product page             | 🔥🔥🔥      | HTML & CSS & JS & React.js & Typescript | <a href="https://sneakears.netlify.app">Ver</a>                                                                        |
 | Chat app CSS illustration           | 🔥🔥🔥      | HTML & CSS & JS                        | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/chat-app-css-illustration-master/">Ver</a>       |
 | Todo app solution                   | 🔥🔥🔥      | HTML & CSS & JS                        | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/todo-app-main/">Ver</a>                          |
 | Sunnyside agency landing page | 🔥🔥 | HTML & CSS & JS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/sunnyside-agency-landing-page-main/">Ver</a>|
 |Fylo data storage component|  🔥🔥 | HTML & CSS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/fylo-data-storage-component-master">Ver</a> |
-
+|Advice generator app challenge hub |🔥🔥| React.js & Typescript & API | <a href="https://lucasfernandodev-adviceapi.netlify.app/">Ver</a>
 
 ## 🎯 Me Encontre
 
