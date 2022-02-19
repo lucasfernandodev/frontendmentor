@@ -43,6 +43,7 @@ body{
   color: hsl(150, 100%, 66%);
   font-size: 13px;
   letter-spacing: 0.3em;
+  text-transform: uppercase;
 }
 
 .main .content .phrase-presentation .phrase{
