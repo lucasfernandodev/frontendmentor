@@ -1,0 +1,101 @@
+*,*::before,*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  background: hsl(220, 22%, 16%);
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.main .content{
+  width: 100%;
+  max-width: 540px;
+  min-height: 330px;
+  background: hsl(228,20%,24%);
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  padding: 70px 50px;
+  position: relative;
+}
+
+.main .content .phrase-id{
+  color: hsl(150, 100%, 66%);
+  font-size: 13px;
+  letter-spacing: 0.3em;
+}
+
+.main .content .phrase-presentation .phrase{
+  color: hsl(193, 38%, 86%);
+   font-size: 28px;
+   text-align: center;
+}
+
+.main .content .phrase-presentation .phrase::before{
+  content: '\201C';
+}
+
+.main .content .phrase-presentation .phrase::after{
+  content: '\201D';
+}
+
+.main .content .phrase-divider img{
+  width: 100%;
+  max-width: 100%;
+}
+
+.main .content .phrase-next-button{
+  position: absolute;
+  left: 50%;
+  bottom: -33px;
+  transform: translateX(-50%);
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background: hsl(150, 100%, 66%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .content .phrase-next-button .btn{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: unset;
+  border: 0;
+}
+ 
+.isActiveBtn{
+  animation: spinDice 1000ms linear forwards;
+}
+
+@keyframes spinDice {
+  0%{
+    transform: rotate(0);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
