@@ -41,11 +41,11 @@ const App = () => {
           </h1>
         </div>
         <div className="phrase-divider">
-            <img src="/public/imagens/pattern-divider-desktop.svg" alt="separations"/>
+            <img src="./public/imagens/pattern-divider-desktop.svg" alt="separations"/>
           </div>
         <div className="phrase-next-button">
           <button ref={buttonRef} className="btn" onClick={event => generateNewPhrase()}>
-            <img src="/public/imagens/icon-dice.svg" alt="run advice"/>
+            <img src="./public/imagens/icon-dice.svg" alt="run advice"/>
           </button>
         </div>
       </section>

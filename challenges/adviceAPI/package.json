@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "global": "^4.4.0",
+    "netlify-cli": "^9.6.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
