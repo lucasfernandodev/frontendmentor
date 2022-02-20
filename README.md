@@ -12,12 +12,16 @@ Esse é um repositórios agrupando todos os meus projetos do Frontend Mentor.
 
 Como sempre uso o Github Pages para publicar meus projetos do Frontend Mentor, e utilizo os repositórios do github para armazenar os projetos. Resolvi agrupar todos eles em nesse repositório, facilitando o processo de buscar, editar e até classificar eles para ver minha melhora.
 
+<br />
+
 ## 🍃 O que é frontend Mentor?
 
-O Frontend Mentor é um plataforma que tem o objetivo de ajudar pessoas a ganhar experiência
-no desenvolvimento front-end enquanto ajuda a revisar outros projetos, ajudando outras pessoas enquanto monta seu portfolio.
+O Frontend Mentor é um plataforma que tem o objetivo de ajudar desenvolvedores a ganhar experiência
+no desenvolvimento web front-end enquanto ajuda a revisar outros projetos, ajudando outras pessoas a alcançarem seu objetivo enquanto monta seu portfolio.
 
 <a href="https://www.frontendmentor.io/" target="_blank">Visitar Frontend Mentor →</a>
+
+<br />
 
 ## ⚡ Tecnologias
 
