@@ -9,9 +9,14 @@ import { CountryDetailedType } from "../../types/country";
 import IconBack from "../../utils/icons/Back";
 import style from "../../styles/country.module.css";
 import Country from "../../lib/countriesSearch";
-import { NextPage } from "next";
+import { GetServerSidePropsContext, NextPage } from "next";
+import { parseCookies } from "nookies";
 
-const CountryPage: NextPage = () => {
+type Props = {
+  theme: string
+}
+
+const CountryPage: NextPage<Props> = ({theme}) => {
   const [country, setCountry] = useState<CountryDetailedType>([] as any);
 
   const router = useRouter();
@@ -61,7 +66,7 @@ const CountryPage: NextPage = () => {
         </title>
         <link rel="shortcut icon" href="/images/favicon.svg" type="image/svg" />
       </Head>
-      <Header />
+      <Header theme={theme}/>
       <main className={style.about}>
         <aside>
           <button className={style.toHome} onClick={(e) => handleClickBackHome(e)}>
@@ -98,6 +103,15 @@ const CountryPage: NextPage = () => {
     </>
   );
 };
+
+
+export async function getServerSideProps(context: GetServerSidePropsContext){
+  const {theme} = parseCookies(context);
+
+  return {
+    props: { theme }
+  }
+}
 
 
 export default CountryPage;

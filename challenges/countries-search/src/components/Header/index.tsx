@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
-import IconMoon from "../../utils/icons/Moon";
 import style from "./style.module.css";
-import { setCookie, parseCookies } from "nookies";
+import { setCookie } from "nookies";
+
+import IconMoon from "../../utils/icons/Moon";
 import IconSun from "../../utils/icons/Sun";
 
-const Header = () => {
+const Header = ({theme} : {theme: string}) => {
 
-  const {theme} = parseCookies();
-  const [lightMode, setLightMode] = useState(theme === "dark" ? false : true);
+
+  const [lightMode, setLightMode] = useState<boolean>(theme === "dark" ? false : true);
 
   useEffect(() => {
     const themeElementRef = document.querySelector('#theme');
@@ -53,7 +54,11 @@ const Header = () => {
         <div className="dark-mode-toggle">
           <button className="dark-mode" onClick={e => lightMode === true ? setLightMode(false) : setLightMode(true)}>
             <div className="icon">
-              {lightMode === true ? <IconMoon /> : <IconSun />}
+              {typeof lightMode !== 'undefined' && (
+                <>
+                  {lightMode === true ? <IconMoon /> : <IconSun />}
+                </>
+              )}
             </div>
             <span>{lightMode !== true ? "Light" : "Dark"} Mode</span>
           </button>
@@ -62,15 +67,5 @@ const Header = () => {
     </header>
   );
 };
-
-export async function getServerSideProps(context: any) {
-  const cookies = parseCookies(context)
-  
-  return {
-    props: {
-      theme: "dark"
-    }
-  }
-}
 
 export default Header;

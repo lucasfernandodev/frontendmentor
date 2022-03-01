@@ -79,6 +79,7 @@ const Select: React.FC<selectProps> = ({ onClick }) => {
         onChange={(e) => setFilterValue(filterValue)}
         defaultValue={filterValue}
         id="search-filter"
+        aria-label="Filter by Region"
       >
         <option value={filterValue}>
           {filterValue === "all" ? "Filter by Region" : filterValue}

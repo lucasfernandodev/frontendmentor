@@ -10,7 +10,7 @@ import Card from "../../components/Card";
 import Loading from "../../components/Loading";
 import titleCase from "../../utils/titleCase";
 
-const HomeTemplate = () => {
+const HomeTemplate = ({theme} : {theme: string}) => {
   const [region, setRegion] = useState<string>("all");
   const [search, setSearch] = useState<string>("");
   const [searchResult, setSearchResult] = useState<CountryType[]>([]);
@@ -79,7 +79,7 @@ const HomeTemplate = () => {
 
   return(
     <>
-    <Header />
+    <Header theme={theme}/>
       <main className={style.home}>
         <aside className={style.boxSearch}>
           <Search
