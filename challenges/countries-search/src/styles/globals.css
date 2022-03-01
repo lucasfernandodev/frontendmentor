@@ -1,0 +1,63 @@
+:root{
+  --width-box: calc(100% - 9%)
+}
+
+.dark, :root{
+  --color-bg: hsl(207, 26%, 17%);
+  --color-element: hsl(209, 23%, 22%);
+  --color-text: hsl(0, 0%, 100%);  
+  --color-hover: hsl(208, 16%, 49%);
+  --color-input: hsla(0, 0%, 100%, 0.7);  
+}
+
+.dark{
+  background: var(--color-bg);
+}
+
+.light{
+  --color-bg: hsl(0, 0%, 98%);
+  --color-element: hsl(0, 0%, 100%);
+  --color-text: hsl(200, 15%, 8%);
+  --color-input: hsl(0, 0%, 52%);
+  --color-hover: hsl(208, 16%, 49%);
+
+  background: var(--color-bg);
+}
+
+
+html,
+body, input, select, button {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito",-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+}
+
+body{
+  background: var(--color-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus{
+  outline: none;
+}
+
+*:focus-visible{
+  outline: rgba(255, 255, 2550,.3) dashed;
+}
+
+

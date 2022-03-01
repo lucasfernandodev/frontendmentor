@@ -1,0 +1,59 @@
+.card{
+  width: 265px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: var(--color-element);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.header{
+  height: auto;
+  width: 100%;
+}
+
+.header img{
+  max-height: 160px;
+  display: block;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.main{
+  padding: 24px 30px;
+  color: var(--color-text);
+}
+
+.main h3{
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.main a{
+  cursor: pointer;
+}
+.main a:hover{
+  text-decoration: underline;
+}
+.card ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card ul li{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.card .main ul li .question{
+  font-weight: 600;
+}
+
+.card .main ul li .response{
+  opacity: 0.7;
+}

@@ -1,0 +1,24 @@
+.CardBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  max-width: var(--width-box);
+  color: var(--color-text);
+}
+
+.CardBox > *{
+  margin-bottom: 75px;
+}
+
+@media (max-width: 620px){
+  .CardBox{
+    justify-content: center;
+  }
+  .CardBox > *{
+    margin-bottom: 32px;
+  }
+  
+}

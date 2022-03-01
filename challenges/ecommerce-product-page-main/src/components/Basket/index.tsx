@@ -28,7 +28,6 @@ const Basket = ({ show, onLight }: { show?: boolean, onLight?: () => void }) => 
 
     // Mostra controle do slider
     if (window.innerWidth <= 818) {
-      console.log(window.innerWidth)
       setShowControl(true)
     }
   }, [])

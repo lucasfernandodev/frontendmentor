@@ -25,7 +25,6 @@ const Cart: FunctionComponent<typeCart & React.HTMLAttributes<HTMLDivElement>> =
   const itemPrice = price;
   const itemqtd = qtd;
   const lastPrice = qtdProduct <= 0 ? itemPrice : itemPrice * itemqtd;
-  console.log(qtdProduct)
 
   return qtdProduct > 0 ? (
     <div className={`cart ${className}`} {...args}>

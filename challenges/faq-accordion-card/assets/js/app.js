@@ -30,5 +30,4 @@ window.addEventListener('resize', function(event){
         bg.src = 'assets/img/bg-pattern-mobile.svg'
         woman.src = 'assets/img/illustration-woman-online-mobile.svg';
     }
-   console.log(width)
   });

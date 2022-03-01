@@ -12,7 +12,6 @@ const Todo = {
 
     dependencyArray.length > 0 &&
       dependencyArray.forEach((dependency) => {
-        console.log(dependency);
         dependency();
       });
   },
@@ -37,7 +36,6 @@ const Todo = {
   },
 
   swapListTasks: (fromIndex, toIndex) => {
-    console.log("status", Todo.storeTasks[fromIndex], Todo.storeTasks[toIndex])
     const Status1 = Todo.storeTasks[fromIndex].status;
     const status2 = Todo.storeTasks[toIndex].status;
     const item1 = Todo.storeTasks[fromIndex].Element.querySelector(".dragglabe");
@@ -200,7 +198,6 @@ function filterList(event, arrayElements) {
 function toggleClassButton() {
   const button = this;
   const ElementPai = this.parentNode.parentNode.parentNode;
-  // console.log('pai',ElementPai.parentNode.parentNode)
   if (ElementPai.classList.contains("active")) {
     ElementPai.classList.remove("active");
   } else {
