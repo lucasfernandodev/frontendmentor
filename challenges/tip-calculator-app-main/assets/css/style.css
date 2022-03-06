@@ -1,0 +1,290 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Space Mono', monospace;
+}
+
+.main{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsl(185, 41%, 84%);
+  gap: 46px;
+}
+
+.main h1 svg{
+  width: 90px;
+  height: 90px;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 920px;
+  padding: 30px 50px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 24px;
+}
+
+
+
+
+.card input{
+  height: 48px;
+  background: unset;
+  background-color: hsl(189, 41%, 97%);
+  border: 1px solid hsl(189, 41%, 97%);
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  padding-right: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.card input:focus{
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.card .card-amount .icon{
+  position: absolute;
+  color: hsl(184, 14%, 56%);
+  z-index: 100;
+  bottom: 0;
+  font-size: 24px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  left: 8px;
+}
+
+.card .card-amount .icon svg{
+  width: 20px;
+  height: 20px;
+}
+
+.card-amount{
+  padding: 16px;
+  width: 100%;
+  max-width: 410px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+
+.card-group{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  border: unset;
+  gap: 4px;
+
+}
+
+.card-group .msg-error{
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #dd5555;
+}
+
+.card .card-group label{
+  color: hsl(186, 14%, 43%);
+}
+
+.card .card-group-input{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card .card-group-input button,.card .card-group-input input{
+  width: 114px;
+  height: 48px;
+  background-color: hsl(183, 100%, 15%);
+  border: 2px solid hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.card .card-group-input button:hover{
+  background: hsl(172, 67%, 45%);
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.card .card-group-input button.active{
+  background: hsl(172, 67%, 45%);
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.card .card-group-input input{
+  background-color: hsl(189, 41%, 97%);
+  border: 2px solid hsl(189, 41%, 97%);
+  cursor: auto;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  padding-right: 8px;
+  text-align: right;
+}
+
+.card .card-group-input input::placeholder{
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.card-info{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 410px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 12px;
+}
+
+
+
+.card-info .card-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.card-info .card-group{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-info .card-group .card-column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 48px;
+  justify-content: center;
+}
+
+.card-info .card-group .card-column:nth-child(2){
+  text-align: right;
+}
+
+.card-info .card-group .card-column span{
+  width: 100%;
+  display: block;
+}
+
+
+.card-info .card-group .card-column .card-info-amount{
+  color: hsl(189, 41%, 97%);
+  font-size: 16px;
+}
+.card-info .card-group .card-column  .card-info-person{
+  font-size: 14px;
+  color: hsl(184, 14%, 56%);
+}
+
+.card-info .card-group .card-column .card-info-value{
+  font-size: 46px;
+  color: hsl(172, 67%, 45%);
+  display: flex;
+}
+
+.card-info .btn-submit{
+  height: 48px;
+  width: 100%;
+  cursor: pointer;
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border: unset;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  border-radius: 4px;
+}
+
+.card-info .btn-submit[disabled=true]{
+  cursor: default;
+    opacity: 0.4;
+}
+
+@media (max-width: 930px){
+  .main{
+    padding: 0 17.88%;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 780px){
+  .main{
+    padding: 0 24px;
+  }
+
+  .card{
+    padding: 24px 16px;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .card .card-amount{
+    padding: 0;
+  }
+
+  .card .card-info{
+    padding: 24px;
+  }
+
+  .card .card-group label{
+    font-size: 14px;
+  }
+  .card .card-group .msg-error{
+    font-size: 12px;
+  }
+
+  .card .card-group-input button.card-btn,.card .card-group-input input.custom{
+    width: calc((100% / 2) - 16px);
+  }
+
+  .card-info .card-wrapper{
+    margin-bottom: 42px;
+    gap: 16px;
+  }
+  .card-info .card-group .card-column .card-info-value{
+    font-size: 36px;
+  }
+}
+
+@media(max-width: 620px){
+  .main{
+    padding: 40px 0px 0px 0px;
+  }
+  .card{
+    border-radius: 24px 24px 0px 0px;
+  }
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="logo">
+        <img src="./assets/images/logo.svg" alt="Tip calculator app" />
+      </h1>
+      <div class="card">
+        <form class="card-amount">
+          <fieldset class="card-group">
+            <spam class="msg-error"></spam>
+            <label for="bill" class="card-label">Bill</label>
+            <input type="text" id="bill" data-type="bill" placeholder="0" />
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2"
+                ></path>
+                <path d="M12 3v3m0 12v3"></path>
+              </svg>
+            </div>
+          </fieldset>
+
+          <fieldset class="card-group">
+            <spam class="msg-error"></spam>
+            <label for="SelectTipCustom" class="card-label">Select Tip %</label>
+            <div class="card-group-input">
+              <button class="card-btn percentageType" data-percentage="5">
+                5%
+              </button>
+              <button class="card-btn percentageType" data-percentage="10">
+                10%
+              </button>
+              <button class="card-btn percentageType" data-percentage="15">
+                15%
+              </button>
+              <button class="card-btn percentageType" data-percentage="25">
+                25%
+              </button>
+              <button class="card-btn percentageType" data-percentage="50">
+                50%
+              </button>
+              <input
+                type="text"
+                data-type="custom"
+                class="custom"
+                id="SelectTipCustom"
+                placeholder="Custom"
+              />
+            </div>
+          </fieldset>
+          <fieldset class="card-group">
+            <spam class="msg-error"></spam>
+            <label for="NumberOfPeople" class="card-label">
+              Number of People
+            </label>
+            <input
+              type="text"
+              id="NumberOfPeople"
+              required
+              data-type="NumberOfPeople"
+              placeholder="0"
+            />
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+              </svg>
+            </div>
+          </fieldset>
+        </form>
+        <section class="card-info">
+          <div class="card-wrapper">
+            <div class="card-group">
+              <div class="card-column">
+                <span class="card-info-amount">Tip Amount</span>
+                <span class="card-info-person">/ person</span>
+              </div>
+              <div class="card-column">
+                <span class="card-info-value"
+                  >$<span class="tipAmount">0.00</span>
+                </span>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card-column">
+                <span class="card-info-amount">Total</span>
+                <span class="card-info-person">/ person</span>
+              </div>
+              <div class="card-column">
+                <span class="card-info-value"
+                  >$<span class="TotalPerson">0.00</span></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-submit" disabled="true">Reset</button>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      let percentageType = 0;
+
+      const form = document.querySelector("form");
+      const input = document.querySelectorAll("input");
+      const inputNumberOfPeople = document.querySelector("#NumberOfPeople");
+      const inputCustom = document.querySelector(".custom");
+      const inputBill = document.querySelector("#bill");
+      const percentageTypeButton = document.querySelectorAll(".percentageType");
+
+      form.addEventListener("click", (e) => e.preventDefault());
+      percentageTypeButton.forEach((element) => {
+        element.addEventListener("click", (e) => {
+          percentageTypeButton.forEach((element) =>
+            element.classList.remove("active")
+          );
+          inputCustom.style.outline = "unset";
+          element.classList.add("active");
+          percentageType = e.target.dataset.percentage;
+          calcTips();
+        });
+      });
+
+      input.forEach((element) =>
+        element.addEventListener("blur", (e) => {
+          validateInput(e, true);
+          calcTips();
+        })
+      );
+
+      function validateInput(e, isErrorVisible = false) {
+        const messageError = [];
+
+        const element = e.target;
+        const inputType = element.dataset.type.toLowerCase();
+        const inputValue = element.value;
+
+        if (inputType === "bill" && inputValue !== "") {
+          if (isNaN(parseFloat(inputValue)) && !isFinite(inputValue)) {
+            messageError.push({
+              element: element,
+              type: inputType,
+              msg: "Digite somente números",
+            });
+          }
+        }
+
+        if (inputType === "custom") {
+          if (inputValue === "") {
+            if (percentageType === 0) {
+              messageError.push({
+                element: element,
+                type: inputType,
+                msg: "Selecione um opção ou defina a sua",
+              });
+            }
+          } else {
+            if (!isNaN(parseFloat(inputValue)) && isFinite(inputValue)) {
+              percentageTypeButton.forEach((element) =>
+                element.classList.remove("active")
+              );
+
+              if (inputValue > 100 || inputValue <= 0) {
+                messageError.push({
+                  element: element,
+                  type: inputType,
+                  msg: "Digite um número valido",
+                });
+              } else {
+                percentageType = inputValue;
+              }
+            } else {
+              messageError.push({
+                element: element,
+                type: inputType,
+                msg: "Digite somente números",
+              });
+            }
+          }
+        }
+
+        if (inputType === "numberofpeople") {
+          if (isNaN(parseFloat(inputValue)) && !isFinite(inputValue)) {
+            messageError.push({
+              element: element,
+              type: inputType,
+              msg: "Digite somente números",
+            });
+          } else {
+            if (inputValue <= 0) {
+              messageError.push({
+                element: element,
+                type: inputType,
+                msg: "Não pode ser zero",
+              });
+            }
+          }
+        }
+
+        if (messageError.length !== 0) {
+          const elementError = element
+            .closest("fieldset")
+            .querySelector(".msg-error");
+
+          messageError.map((error) => {
+            if (isErrorVisible === true) {
+              elementError.innerHTML = error.msg;
+              error.element.style.outline = "2px solid #dd5555";
+            }
+          });
+
+          return messageError;
+        } else {
+          element.style.outline = "unset";
+        }
+      }
+
+      function calcTips() {
+        const verifyInputs = [];
+
+        input.forEach((element) => {
+          const res = validateInput({ target: element });
+
+          if (typeof res !== "undefined") {
+            verifyInputs.push(res);
+          }
+        });
+
+        if (verifyInputs.length === 0) {
+          const tipAmountPlace = document.querySelector(".tipAmount");
+          const TotalPersonPlace = document.querySelector(".TotalPerson");
+          const btnSubmit = document.querySelector(".btn-submit");
+
+          let tipAmountPerson = 0;
+          let TotalPerson = 0;
+
+          btnSubmit.removeAttribute("disabled");
+          btnSubmit.addEventListener("click", e => {
+            tipAmountPlace.innerHTML = '0,00'
+            TotalPersonPlace.innerHTML = '0,00'
+            TotalPerson = 0;
+            input.forEach((element) => {
+              element.value = ""
+         
+            })
+      
+            btnSubmit.setAttribute("disabled", true);
+          })
+
+
+
+          const bill = inputBill.value;
+          const percentage = percentageType / 100;
+          const NumberOfPeople = inputNumberOfPeople.value;
+
+          tipAmountPerson = (bill * percentage) / NumberOfPeople;
+          TotalPerson = (bill / NumberOfPeople + tipAmountPerson).toFixed(2);
+
+          tipAmountPlace.innerHTML = String(tipAmountPerson).substring(0, 4);
+          TotalPersonPlace.innerHTML = TotalPerson;
+        }
+      }
+
+      input[input.length - 1].addEventListener("blur", (e) => calcTips());
+    </script>
+  </body>
+</html>
