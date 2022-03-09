@@ -67,7 +67,7 @@ no desenvolvimento web front-end enquanto ajuda a revisar outros projetos, ajuda
 | Fylo data storage component         | 🔥🔥   | HTML · CSS                              | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/fylo-data-storage-component-master">Ver</a>      |
 | Advice generator app challenge hub  | 🔥🔥   | React.js · Typescript · API             | <a href="https://lucasfernandodev-adviceapi.netlify.app/">Ver</a>                                                      |
 |REST Countries API with color theme switcher challenge hub |🔥🔥🔥🔥 | React.js · Typescript |<a href="https://frontendmentor-lucasfernandodev.vercel.app/">Ver</a>  |
-
+| Tip calculator app | 🔥🔥 | HTML · CSS ·JS |<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/tip-calculator-app-main/">Ver</a>|
 ## 🌎 Me Encontre
 
 <a href="https://www.instagram.com/lucasfernando.dev/" target="_blank">
