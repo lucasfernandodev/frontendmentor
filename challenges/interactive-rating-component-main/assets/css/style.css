@@ -1,0 +1,234 @@
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, button{
+  font-family: "Overpass", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 100%);
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  background: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 24px;
+}
+
+button{
+  background-color: hsl(25, 97%, 53%);
+  border: unset;
+  height: 44px;
+  width: 100%;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  line-height: 44px;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms linear;
+}
+
+button:hover{
+  color: hsl(25, 97%, 53%);
+  background: hsl(0, 0%, 100%);
+}
+
+.card-wrapper{
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+  border-radius: 22px;
+}
+
+.card{
+  background: linear-gradient(to bottom right, hsl(213, 19%, 18%),  hsl(213, 19%, 11%));
+  position: relative;
+  max-width: 400px;
+  padding: 32px 24px;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 22px;
+  line-height: 1.5rem;
+  min-height: 396px;
+}
+
+.card[data-view="false"]{
+  display: none;
+}
+
+.card[data-view="true"]{
+  display: flex;
+}
+
+.card .starLogo{
+  width: 42px;
+  height: 42px;
+  background-color: hsla(217, 12%, 63%,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(216, 12%, 54%);
+  margin-bottom: 24px;
+}
+
+.card .subtitle{
+  color: hsl(217, 12%, 63%);
+  letter-spacing: 0.03rem;
+}
+
+.card .groupButton{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card .groupButton .btn{
+  width: 46px;
+  height: 46px;
+  background-color: hsla(217, 12%, 63%,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms linear;
+  cursor: pointer;
+  color: hsl(216, 12%, 54%);
+  font-weight: bold;
+}
+
+.card .groupButton .btn:hover{
+  color: hsl(25, 97%, 53%);
+  background: hsl(0, 0%, 100%);
+}
+
+.card-result{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+  min-height: 396px;
+}
+
+.card-result .displayResultOption{
+  padding: 4px 16px;
+  display: block;
+  color: hsl(25, 97%, 53%);
+  background: hsla(217, 12%, 63%,0.1);
+  border-radius: 16px;
+  font-size: 14px;
+  padding-bottom: 2px;
+  margin-bottom: 24px;
+}
+
+.card-result .subtitle{
+  text-align: center;
+}
+
+.card .submit{
+  padding-top: 2px;
+}
+
+.active{
+  color: hsl(0, 0%, 100%) !important;
+  background: hsl(216, 12%, 54%) !important;
+}
+
+
+.container.animationCloseCard::before{
+  content: "";
+  animation: animateTransition 1s linear forwards;
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+@keyframes animateTransition {
+  0%{
+    width: 0px;
+    height: 0px;
+    color: transparent;
+    background: hsl(25, 37%, 53%);
+  }
+
+  50%{
+    width: 2500px;
+    height: 2500px;
+    background: hsl(25, 37%, 53%);
+  }
+
+  100%{
+    color: transparent;
+    background: hsl(25, 37%, 53%);
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.btn-disabled{
+  background: hsl(25, 37%, 53%);
+  user-select: none;
+  cursor: default;
+  position: relative;
+}
+
+.btn-disabled:hover{
+  background: hsl(25, 37%, 53%);
+  user-select: none;
+  cursor: default;
+  color: inherit;
+}
+
+.btn-disabled::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: 4px solid hsl(0, 0%, 100%);
+  border-top-color: hsl(213, 19%, 11%);
+  border-radius: 50%;
+  animation: loading 850ms infinite;
+}
+
+@keyframes loading {
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 490px){
+  .card .subtitle{
+    color: hsl(217, 12%, 63%);
+    letter-spacing: unset;
+  }
+}

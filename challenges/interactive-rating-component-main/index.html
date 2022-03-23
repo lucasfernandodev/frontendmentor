@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <div class="card-wrapper">
+      <div class="container">
+
+      <div class="card card-input" data-view="true">
+        <div class="starLogo">
+          <img src="./assets/images/icon-star.svg" alt="Star">
+        </div>
+        <h1 class="title">How did we do?</h1>
+        <p class="subtitle">
+          Please let us know how we did with your support request. All feedback is
+          appreciated to help us improve our offering!
+        </p>
+        <ul class="groupButton">
+          <li class="btn" name="option">1</li>
+          <li class="btn" name="option">2</li>
+          <li class="btn" name="option">3</li>
+          <li class="btn" name="option">4</li>
+          <li class="btn" name="option">5</li>
+        </ul>
+        <button class="submit">Submit</button>
+      </div>
+
+      <div class="card card-output card-result"  data-view="false">
+        <div class="ilustration">
+          <img src="./assets/images/illustration-thank-you.svg" alt="">
+        </div>
+        <span class="displayResultOption">
+          You selected <span class="displayCountOptionSelected">4</span> out of 5
+        </span>
+        <h1 class="title">Thank you</h1>
+        <p class="subtitle">
+          We appreciate you taking the time to give a rating. If
+    you ever need more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js" type="module"></script>
+  </body>
+</html>
