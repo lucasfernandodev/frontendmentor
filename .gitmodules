@@ -1,0 +1,3 @@
+[submodule "challenges/spacetravel"]
+	path = challenges/spacetravel
+	url = https://github.com/lucasfernandodev/spacetravel
