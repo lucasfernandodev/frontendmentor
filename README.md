@@ -6,11 +6,6 @@
 
 Esse é um repositórios agrupando todos os meus projetos do Frontend Mentor.
 
-<br />
-
-## ☁️ Visão geral
-
-No geral esse é um repositório para agrupar todos os meus projetos desenvolvidos para o Front-end Mentor.
 
 <br />
 
