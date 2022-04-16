@@ -1,0 +1,53 @@
+@import url(normalize.css);
+@import url(animation.css);
+@import url(style.css);
+@import url(style.media.css);
+
+section:not(.show){
+  opacity: 0;
+  transform: translateY(5px);
+}
+
+section.show{
+  opacity: 0;
+  animation: fadeIn 350ms linear forwards;
+  animation-delay: 550ms;
+}
+
+section.hide{
+  opacity: 1;
+  animation: fadeOut 1s linear forwards; 
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeOut {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+ *,
+ *::before,
+ *::after{
+   animation: unset !important;
+   -webkit-animation: unset;
+ }
+
+ section{
+   opacity: 1 !important;
+ }
+}
