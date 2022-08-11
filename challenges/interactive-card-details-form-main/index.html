@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="./assets/css/imports.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+
+      <div class="content-card">
+        <div class="cardIlustrations">
+          <div class="card">
+            <div class="cardLogo">
+              <img src="./assets/img/card-logo.svg" alt="Card Logo">
+            </div>
+            <div class="cardNumber cardItem cardNumberPlaceholder" data-key="0000 0000 0000 0000">
+              <span class="groupNumber">0000</span>
+              <span class="groupNumber">0000</span>
+              <span class="groupNumber">0000</span>
+              <span class="groupNumber">0000</span>
+            </div>
+          <div class="cardInfo">
+            <span class="card-name cardItem" data-item="cardName">Jane Appleseed</span>
+            <div class="cardDate ">
+              <span class="card-data date1 cardItem" data-item="date1">00</span>
+              <span>/</span>
+              <span class="card-data date2 cardItem" data-item="date2">00</span>
+            </div>
+          </div>
+          </div>
+
+          <div class="cardBack">
+            <span class="card-cvc cardItem" data-item="cvc">000</span>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="cardProcess">
+
+        <form class="form">
+          <div class="slice"></div>
+          <!-- Cardholder Name -->
+          <fieldset class="form_group">
+            <label for="Cardholder_Name" class="form_label">
+              Cardholder Name
+            </label>
+            <input
+              id="Cardholder_Name"
+              type="text"
+              name="name"
+              class="form_input"
+              placeholder="e.g. Jane Appleseed"
+              maxlength="28"
+            />
+            <span class="form_error input_valid"> Can't be blank </span>
+          </fieldset>
+
+          <!-- Card Number -->
+          <fieldset class="form_group">
+            <label for="Card_Number" class="form_label"> Card Number </label>
+            <input
+              id="Card_Number"
+              type="text"
+              name="card_number"
+              class="form_input cardNunber"
+              placeholder="e.g. 1234 5678 9123 0000"
+              maxlength="20"
+              minlength="20"
+            />
+            <span class="form_error input_valid"> Wrong format, numbers only </span>
+          </fieldset>
+
+          <!-- Card Date / card CVC -->
+          <fieldset class="form_group_row">
+            <fieldset class="form_group_row">
+              <label for="Card_Date_1" class="form_label"
+                >Exp. Date (MM/YY)</label
+              >
+              <input
+                id="Card_Date_1"
+                type="text"
+                class="form_input"
+                maxlength="2"
+                placeholder="MM"
+              />
+              <input
+                id="Card_Date_2"
+                type="text"
+                class="form_input"
+                maxlength="2"
+                placeholder="YY"
+                oninput=""
+              />
+              <span class="form_error input_valid"> Can't be blank </span>
+            </fieldset>
+
+            <fieldset class="form_group">
+              <label for="CVC" class="form_label labelCVC"> CVC </label>
+              <input
+                id="CVC"
+                type="text"
+                class="form_input"
+                placeholder="e.g. 123"
+                maxlength="3"
+              />
+              <span class="form_error input_valid"> Can't be blank </span>
+            </fieldset>
+          </fieldset>
+
+          <button type="submit" class="form_button_submit">Confirm</button>
+        </form>
+
+
+        <div class="successMessage">
+          <img src="./assets/img/icon-complete.svg" alt="Icon form complete">
+          <h3>Thank you!</h3>
+          <p>We've added your card details</p>
+          <button class="form_button_push">Continue</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/init.js" type="module"></script>
+  </body>
+</html>
