@@ -4,14 +4,14 @@
 
 # Frontend Mentor - Projetos
 
-Esse é um repositórios agrupando todos os meus projetos do Frontend Mentor.
+Esse é um repositórios agrupando todos os meus desafios do Frontend Mentor.
 
 <br />
 
 ## 🍃 O que é Frontend Mentor?
 
-O Frontend Mentor é uma plataforma cujo objetivo é ajudar desenvolvedores a ganhar experiência
-no desenvolvimento web Front-end, fornecendo designs, e permitindo ao usuário receber e dar feedbacks nos projetos publicados na plataforma, alcançando o objetivo de melhorar como desenvolvedor e montar um portfólio.
+O Frontend Mentor é uma plataforma que possibilita desenvolvedores a ganhar experiência
+no desenvolvimento web, por desafios front-end que incluem web designs profissionais. Isso permite que você pratique a construção de sites em um fluxo de trabalho realista. Aceitar esses desafios ajudará você a melhorar suas habilidades, ganhar experiência na criação de sites e criar um portfólio de projetos incrível.
 
 <a href="https://www.frontendmentor.io/" target="_blank">Visitar Frontend Mentor →</a>
 
