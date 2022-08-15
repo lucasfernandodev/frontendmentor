@@ -64,7 +64,7 @@ no desenvolvimento web Front-end, fornecendo designs, e permitindo ao usuário r
 | Tip calculator app                                         | 🔥🔥     | HTML · CSS ·JS                          | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/tip-calculator-app-main/">Ver</a>                |
 | Animate Interactive rating component                       | 🔥       | HTML · CSS ·JS                          | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/interactive-rating-component-main/">Ver</a>      |
 | Space tourism multi-page website                           | 🔥🔥🔥   | React.js · Typescript · Vite            | <a href="https://lucasfernandodev.github.io/spacetravel/">Ver</a>   |
-| Interactive card details form | 🔥🔥 | HTML · CSS · JS | <a href="https://github.com/lucasfernandodev/frontendmentor/tree/main/challenges/interactive-card-details-form-main">Ver</a>
+| Interactive card details form | 🔥🔥 | HTML · CSS · JS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/interactive-card-details-form-main/">Ver</a>
 
 ## 🌎 Me Encontre
 
