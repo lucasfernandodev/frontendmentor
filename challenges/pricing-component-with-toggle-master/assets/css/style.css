@@ -1,0 +1,236 @@
+@import url(./modules/button_switch.css);
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body, html, button{
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../images/bg-bottom.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-color: hsl(240, 78%, 98%);
+}
+
+body::before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/bg-top.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh; 
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .header, .hero .content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.hero .header{
+  flex-direction: column;
+}
+
+.hero .header .title{
+  color: hsl(232, 13%, 33%);
+  margin-bottom: 32px;
+}
+
+.hero .header .options{
+  display: flex;
+  gap: 18px;
+}
+.hero .header .options span{
+  color: hsl(233, 13%, 49%);
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .content{
+  overflow: visible;
+}
+.hero .content .card-offer{
+  height: 450px;
+  width: 33.3333333333vw;
+  max-width: 350px;
+  background-color: #fff;
+  box-shadow: 1px 3px 12px hsla(234, 14%, 74%, 0.5);
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 330px;
+  margin-bottom: 32px;
+}
+
+
+
+.hero .content .card-offer:nth-child(1){
+  border-radius: 12px 0px 0px 12px;
+}
+
+.hero .content .card-offer:nth-child(2){
+  background: linear-gradient(to bottom right,  hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  height: 500px;
+}
+
+.hero .content .card-offer:nth-child(3){
+  border-radius: 0px 12px 12px 0px;
+}
+
+
+.hero .content .card-offer .card-type{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: hsl(233, 13%, 49%);
+}
+
+.hero .content .card-offer:nth-child(2) .card-type{
+  color: #fff;
+}
+
+.hero .content .card-offer .card-price{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: hsl(232, 13%, 33%);
+  font-size: 36px;
+}
+
+.hero .content .card-offer:nth-child(2) .card-price{
+  color: white;
+}
+
+.hero .content .card-offer .card-features{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hero .content .card-offer .card-features .card-features-item{
+  width: 100%;
+  height: 52px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid hsl(234, 14%, 74%);
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  color: hsl(233, 13%, 49%)
+}
+
+.hero .content .card-offer .card-features .card-features-item:nth-child(2){
+  border: unset;
+}
+
+.hero .content .card-offer:nth-child(2) .card-features .card-features-item{
+  color: #fff;
+}
+
+.hero .content .card-offer .card-button{
+  width: 100%;
+  height: 42px;
+  background: linear-gradient(to right,  hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.4s ease-in-out;
+}
+
+.hero .content .card-offer .card-button:hover{
+  background: transparent;
+  border-color: hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+}
+
+.hero .content .card-offer:nth-child(2) .card-button{
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+}
+
+.hero .content .card-offer:nth-child(2)  .card-button:hover{
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+@media (max-width: 1050px){
+  .hero{
+    padding-top: 75px;
+    gap: 100px;
+  }
+  .hero .content{
+    flex-direction: column;
+  }
+  .hero .content .card-offer{
+    border-radius: 12px !important;
+  }
+}
+
+@media (max-width: 810px){
+  body{
+    background: unset;
+  }
+  body::before{
+    background-size: auto 615px;
+    background-position-x: 60vw;
+    background-position-y: -4vh;
+  }
+}
+
+@media (max-width: 550px){
+  .hero .content{
+    max-width: 330px;
+    width: 330px;
+  }
+}

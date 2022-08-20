@@ -1,52 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  Our Pricing
-  Annually
-  Monthly
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="hero">
+      <section class="header">
+        <h1 class="title">Our Pricing</h1>
+        <div class="options">
+          <span>Annually</span>
+          <label class="switch">
+            <input type="checkbox" id="button-check"/>
+            <span class="slider round"></span>
+          </label>
+          <span>Monthly</span>
+        </div>
+      </section>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+      <!-- offers -->
+      <section class="content">
+        <!-- Offer Basic -->
+        <div class="card-offer" data-offer="basic">
+          <h3 class="card-type">Basic</h3>
+          <h2 class="card-price">&dollar;199.99</h2>
+          <ul class="card-features">
+            <li class="card-features-item">500 GB Storage</li>
+            <li class="card-features-item">2 Users Allowed</li>
+            <li class="card-features-item">Send up to 3 GB</li>
+          </ul>
+          <button class="card-button">Learn More</button>
+        </div>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+        <!-- Offer Professional -->
+        <div class="card-offer" data-offer="professional">
+          <h3 class="card-type">Professional</h3>
+          <h2 class="card-price">&dollar;249.99</h2>
+          <ul class="card-features">
+            <li class="card-features-item">1 TB Storage</li>
+            <li class="card-features-item">5 Users Allowed</li>
+            <li class="card-features-item">Send up to 10 GB</li>
+          </ul>
+          <button class="card-button">Learn More</button>
+        </div>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- Master -->
+        <div class="card-offer" data-offer="master">
+          <h3 class="card-type">Master</h3>
+          <h2 class="card-price">&dollar;399.99</h2>
+          <ul class="card-features">
+            <li class="card-features-item">2 TB Storage</li>
+            <li class="card-features-item">10 Users Allowed</li>
+            <li class="card-features-item">Send up to 20 GB</li>
+          </ul>
+          <button class="card-button">Learn More</button>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const offersPrice = {
+        basic: {
+          Annually: '&dollar;199.99',
+          Monthly: '&dollar;19.99',
+        },
+        professional: {
+          Annually: '&dollar;249.99',
+          Monthly: '&dollar;24.99',
+        },
+        master: {
+          Annually: '&dollar;399.99',
+          Monthly: '&dollar;39.99',
+        },
+      };
+
+      const buttonSwitch = document.getElementById('button-check');
+
+      buttonSwitch.addEventListener("click", (event) => {
+
+        if(buttonSwitch.checked === true){
+          Object.keys(offersPrice).map(offer => {
+            const offerCard = document.querySelector(`[data-offer="${offer}"]`);
+
+            const offerPrice = offerCard.querySelector('.card-price');
+
+            offerPrice.innerHTML = offersPrice[offer].Monthly
+          })
+        }else{
+          Object.keys(offersPrice).map(offer => {
+            const offerCard = document.querySelector(`[data-offer="${offer}"]`);
+
+            const offerPrice = offerCard.querySelector('.card-price');
+
+            offerPrice.innerHTML = offersPrice[offer].Annually
+          })
+        }
+        
+      })
+      
+    </script>
+  </body>
 </html>
