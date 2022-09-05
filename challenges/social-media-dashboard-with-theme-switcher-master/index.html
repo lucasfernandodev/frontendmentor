@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .loading{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        background: hsl(230, 17%, 14%);
+        display: block;
+      }
+
+      .loading::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 3px solid hsl(210, 78%, 56%);
+        border-top-color: transparent;
+        animation: loading 1000ms linear infinite;
+      }
+      @keyframes loading {
+       100%{
+        transform:  translate(-50%, -50%) rotate(360deg);
+       }
+      }
+      body{
+        overflow: hidden;
+      }
+
+      ::-webkit-scrollbar {
+
+-webkit-appearance: none;
+width: 10px;
+background-color: var(--bg);
+
+}
+
+::-webkit-scrollbar-thumb {
+border: 3px solid var(--bg);
+background-color: hsl(208, 92%, 53%);
+}
+    </style>
+  </head>
+  <body data-theme-dark="true">
+    <div class="loading"></div>
+    <header class="hero-header">
+      <div class="content">
+        <h1 class="title">Social Media Dashboard</h1>
+        <p class="overview-likes">Total Followers: 23,004</p>
+      </div>
+      <div class="toggle-button-content">
+        <button class="toggle-button" aria-pressed="true"></button>
+        <span class="toggle-button-state">Dark mode</span>
+      </div>
+    </header>
+    <main class="hero">
+      <section class="section-dashboard"></section>
+      <section class="section-overview">
+        <h2>Overview - Today</h2>
+        <div class="overview"></div>
+      </section>
+    </main>
+
+    <script>
+  
+    </script>
+
+    <script>
+      window.onload = () => {
+        document.body.removeChild(document.querySelector(".loading"));
+        document.body.style.overflow = 'unset';
+      }
+
+      const toggleButton = document.querySelector('.toggle-button');
+      const theme = localStorage.getItem('theme-dark');
+      
+      document.body.setAttribute("data-theme-dark", theme !== null ? theme : true)
+      toggleButton.setAttribute("aria-pressed", theme !== null ? theme : true)
+
+      
+      toggleButton.addEventListener('click', () => {
+        
+        toggleButton.setAttribute(
+          'aria-pressed',
+          toggleButton.getAttribute('aria-pressed') === 'false'
+        );
+
+        document.body.setAttribute('data-theme-dark',  toggleButton.getAttribute('aria-pressed'));
+        localStorage.setItem("theme-dark", toggleButton.getAttribute('aria-pressed'))
+      });
+      
+    </script>
+  
+
+    <script src="./assets/js/main.js" type="module"></script>
+  </body>
+</html>
