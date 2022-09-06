@@ -66,6 +66,8 @@ no desenvolvimento web, por desafios front-end que incluem web designs profissio
 | Space tourism multi-page website                           | 🔥🔥🔥   | React.js · Typescript · Vite            | <a href="https://lucasfernandodev.github.io/spacetravel/">Ver</a>   |
 | Interactive card details form | 🔥🔥 | HTML · CSS · JS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/interactive-card-details-form-main/">Ver</a> |
 | Product preview card component | 🔥 | HTML · CSS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/product-preview-card-component-main/">Ver</a> |
+|Pricing component with toggle| 🔥🔥 |HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/pricing-component-with-toggle-master/">Ver</a>|
+|Social media dashboard with theme switcher|🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/social-media-dashboard-with-theme-switcher-master/">Ver</a>
 
 ## 🌎 Me Encontre
 
