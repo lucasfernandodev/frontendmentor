@@ -102,6 +102,7 @@ h6 {
 .hero-header .toggle-button-content .toggle-button {
   order: 2;
   width: 51px;
+  color: transparent;
   height: 27px;
   border-radius: 14px;
   background: var(--toggle-button-background);

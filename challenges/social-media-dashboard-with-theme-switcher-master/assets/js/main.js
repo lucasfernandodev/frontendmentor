@@ -1,14 +1,14 @@
 import { data } from "../../data.js";
 
-  const socialDashboard = document.querySelector('.section-dashboard');
-  const socialOverview = document.querySelector('.section-overview .overview');
+const socialDashboard = document.querySelector('.section-dashboard');
+const socialOverview = document.querySelector('.section-overview .overview');
 
-  const statusImagePath = {
-    incresize: './assets/images/icon-up.svg',
-    descresize: './assets/images/icon-down.svg',
-  }
+const statusImagePath = {
+  incresize: './assets/images/icon-up.svg',
+  descresize: './assets/images/icon-down.svg',
+}
 
-  function renderCard(social, social_name){
+function renderCard(social, social_name) {
 
   const card = document.createElement('div');
   card.className = 'card';
@@ -41,6 +41,7 @@ import { data } from "../../data.js";
 
   const statusImage = document.createElement('img');
   statusImage.src = statusImagePath[social.status];
+  statusImage.alt = social.status;
 
   const statusText = document.createElement('span');
   statusText.innerText = `${social.variant} Today`
@@ -54,20 +55,20 @@ import { data } from "../../data.js";
   card.appendChild(staticContainer);
 
   socialDashboard.append(card);
-  }
+}
 Object.keys(data).forEach(name => {
   const social = data[name];
   const social_name = name;
   const overview = social.overview;
   renderCard(social, social_name);
 
-  function renderCardOverview(data){
+  function renderCardOverview(data) {
     const name = data.overviewName.replaceAll("_", " ");
     const logo = data.logo;
     const status = data.status;
     const value = data.value;
     const variant = data.variant;
- 
+
     const card = document.createElement("div");
     card.className = 'card-overview';
 
@@ -95,15 +96,19 @@ Object.keys(data).forEach(name => {
     const staticPropertie = document.createElement("div");
     staticPropertie.className = 'staticPropertie';
     staticPropertie.setAttribute("data-status", status);
+
+
     const staticIcon = document.createElement('img');
     staticIcon.src = statusImagePath[status];
+    staticIcon.alt = status;
+
     const staticText = document.createElement('span');
     staticText.innerText = variant;
 
     staticPropertie.appendChild(staticIcon);
     staticPropertie.appendChild(staticText);
 
-    
+
     cardMain.appendChild(valueText);
     cardMain.appendChild(staticPropertie);
 
@@ -115,7 +120,7 @@ Object.keys(data).forEach(name => {
 
   Object.keys(overview).forEach(overviewName => {
     const overviewItem = overview[overviewName];
-    renderCardOverview({overviewName, logo: social.logo,...overviewItem})
+    renderCardOverview({ overviewName, logo: social.logo, ...overviewItem })
   })
 
 })

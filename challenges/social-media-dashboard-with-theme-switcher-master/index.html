@@ -22,7 +22,7 @@
     />
 
     <style>
-      .loading{
+      .loading {
         width: 100vw;
         height: 100vh;
         position: fixed;
@@ -34,8 +34,8 @@
         display: block;
       }
 
-      .loading::before{
-        content: "";
+      .loading::before {
+        content: '';
         position: absolute;
         top: 50%;
         left: 50%;
@@ -48,26 +48,24 @@
         animation: loading 1000ms linear infinite;
       }
       @keyframes loading {
-       100%{
-        transform:  translate(-50%, -50%) rotate(360deg);
-       }
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
       }
-      body{
+      body {
         overflow: hidden;
       }
 
       ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 10px;
+        background-color: var(--bg);
+      }
 
--webkit-appearance: none;
-width: 10px;
-background-color: var(--bg);
-
-}
-
-::-webkit-scrollbar-thumb {
-border: 3px solid var(--bg);
-background-color: hsl(208, 92%, 53%);
-}
+      ::-webkit-scrollbar-thumb {
+        border: 3px solid var(--bg);
+        background-color: hsl(208, 92%, 53%);
+      }
     </style>
   </head>
   <body data-theme-dark="true">
@@ -78,7 +76,7 @@ background-color: hsl(208, 92%, 53%);
         <p class="overview-likes">Total Followers: 23,004</p>
       </div>
       <div class="toggle-button-content">
-        <button class="toggle-button" aria-pressed="true"></button>
+        <button class="toggle-button" aria-pressed="true">Toggle theme</button>
         <span class="toggle-button-state">Dark mode</span>
       </div>
     </header>
@@ -90,36 +88,39 @@ background-color: hsl(208, 92%, 53%);
       </section>
     </main>
 
-    <script>
-  
-    </script>
+    <script></script>
 
     <script>
       window.onload = () => {
-        document.body.removeChild(document.querySelector(".loading"));
+        document.body.removeChild(document.querySelector('.loading'));
         document.body.style.overflow = 'unset';
-      }
+      };
 
       const toggleButton = document.querySelector('.toggle-button');
       const theme = localStorage.getItem('theme-dark');
-      
-      document.body.setAttribute("data-theme-dark", theme !== null ? theme : true)
-      toggleButton.setAttribute("aria-pressed", theme !== null ? theme : true)
 
-      
+      document.body.setAttribute(
+        'data-theme-dark',
+        theme !== null ? theme : true
+      );
+      toggleButton.setAttribute('aria-pressed', theme !== null ? theme : true);
+
       toggleButton.addEventListener('click', () => {
-        
         toggleButton.setAttribute(
           'aria-pressed',
           toggleButton.getAttribute('aria-pressed') === 'false'
         );
 
-        document.body.setAttribute('data-theme-dark',  toggleButton.getAttribute('aria-pressed'));
-        localStorage.setItem("theme-dark", toggleButton.getAttribute('aria-pressed'))
+        document.body.setAttribute(
+          'data-theme-dark',
+          toggleButton.getAttribute('aria-pressed')
+        );
+        localStorage.setItem(
+          'theme-dark',
+          toggleButton.getAttribute('aria-pressed')
+        );
       });
-      
     </script>
-  
 
     <script src="./assets/js/main.js" type="module"></script>
   </body>
