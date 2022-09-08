@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <!-- brand -->
+    <div class="brand">
+      <img src="./assets/images/logo.svg" alt="logo" />
+    </div>
+
+    <div class="header-content">
+      <ul class="header-menu">
+        <li class="menu-item"><a href="#" class="menu-link">Product</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Features</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
+      </ul>
+
+      <div class="header-dot"></div>
+      <button class="btn-login">Login</button>
+    </div>
+    <div class="wrapper-button">
+      <button class="toggleMenu">
+        <img src="./assets/images/icon-hamburger.svg" alt="Toggle menu">
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-apresentation">
+
+      <div class="wrapper-description">
+        <span class="featured">New</span>
+        <span>Monograph Dashboard</span>
+      </div>
+
+      <h1 class="title">
+        Powerful insights into your team
+      </h1>
+
+      <p class="text-description">
+        Project planning and time tracking for agile teams
+      </p>
+
+      <div class="wrapper-button">
+        <button class="btn-action">
+          Schedule a demo
+        </button>
+        <button class="btn-link">
+          to see a live preview
+        </button>
+      </div>
+    </section>
+    <section class="section-ilustration"></section>
+  </main>
+
+  
+  
+
+
+<script>
+  const button = document.querySelector('.toggleMenu');
+  const img = button.querySelector('img');
+  const menu = document.querySelector(".header-content")
+
+  function toggleButton(state){
+  
+  }
+
+  button.addEventListener("click", () => {
+
+    if(!menu.classList.contains("open")){
+      img.src = './assets/images/icon-close.svg';
+      menu.style.display = 'flex'
+      menu.classList.add('open')
+    }else{
+      img.src = './assets/images/icon-hamburger.svg';
+      menu.style.display = 'none'
+      menu.classList.remove('open')
+    }
+  })
+</script>
+  
+  
+  
+</body>
+</html>

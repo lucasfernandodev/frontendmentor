@@ -1,0 +1,341 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,html,button{
+  font-family: 'Barlow Condensed', sans-serif;
+  color: hsl(230, 29%, 20%);
+  font-size: 18px;
+}
+
+@media (max-width: 1370px){
+  body,html,button{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 510px){
+  body,html,button{
+    font-size: 14px;
+  }
+}
+
+button{
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 161px;
+  background-color: hsl(207, 33%, 95%);
+}
+
+@media (max-height: 800px){
+  body{
+    gap: 82px;
+  }
+}
+
+.header, .main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 165px;
+}
+
+.header{
+  height: 97px;
+  align-items: flex-end;
+}
+
+/* Button toggle */
+@media (min-width: 700px){
+  .header .wrapper-button{
+    display: none;
+  }
+}
+
+.header .header-content{
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  height: 34px;
+  align-items: center;
+}
+
+.header .header-content .header-dot{
+  width: 8px;
+  height: 8px;
+  background-color: hsl(231, 7%, 65%);
+  border-radius: 50%;
+  display: block;
+  opacity: 0.15;
+}
+
+.header .header-content .header-menu{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 42px;
+}
+
+.header .header-content .header-menu .menu-item .menu-link{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.header .header-content .header-menu .menu-item .menu-link:hover{
+  text-decoration: underline;
+}
+
+.header .header-content .btn-login{
+  background-color: unset;
+  border: unset; 
+  font-weight: bold;
+  text-transform: uppercase;
+  color: hsl(231, 7%, 65%)
+}
+
+.header .header-content .btn-login:hover{
+  text-decoration: underline;
+}
+
+
+
+/* Main */
+
+.main .section-apresentation{
+  width: 100%;
+  max-width: 470px;
+  position: relative;
+}
+
+.main .section-apresentation .wrapper-description{
+  margin-bottom: 30px;
+  height: 25px;
+  display: flex;
+  gap:12px;
+  align-items: center;
+}
+
+.main .section-apresentation .wrapper-description .featured{
+  background: hsl(230, 29%, 20%);
+  color: hsl(207, 33%, 95%);
+  width: 48px;
+  height: 25px;
+  border-radius: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.79rem;
+}
+
+.main .section-apresentation .wrapper-description span:not(.featured){
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.main .section-apresentation .title{
+  margin-bottom: 42px;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+.main .section-apresentation .text-description{
+  margin-bottom: 64px;
+  display: block;
+  max-width: 294px;
+  font-size: 1.12rem;
+  font-weight: 400;
+  letter-spacing: 0.06em
+}
+
+.main .section-apresentation .wrapper-button .btn-action{
+  width: 184px;
+  height: 52px;
+  background-color: hsl(0, 100%, 68%);
+  color: hsl(207, 33%, 95%);
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: unset;
+}
+
+.main .section-apresentation .wrapper-button .btn-action:hover{
+  opacity: 0.8;
+}
+
+.main .section-apresentation .wrapper-button{
+  display: flex;
+  gap: 20px;
+}
+.main .section-apresentation .wrapper-button .btn-link{
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: unset;
+  width: fit-content;
+  height: 52px;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+}
+
+.main .section-ilustration{
+  max-width: 650px;
+  width: 100%;
+  background-image: url(../images/illustration-devices.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 1330px){
+  .header, .main{
+    padding: 0 83px;
+  }
+  .main .section-ilustration{
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1370px){
+  .header, .main{
+    padding: 0 42px;
+  }
+  .main .section-ilustration{
+    max-width: 520px;
+    
+  }
+}
+
+@media (max-width: 1000px){
+  .main .section-ilustration{
+    max-width: 450px;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 960px){
+  .main .section-ilustration{
+    max-width: 390px;
+  }
+}
+
+@media (max-width: 860px){
+  body{
+    gap: 64px;
+  }
+  .main{
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-end;
+  }
+  header{
+    padding: 0 32px;
+  }
+  .main .section-ilustration{
+    order: 1;
+    position: relative;
+    background-position-x:left;
+    right: 0;
+    max-width: 100%;
+    margin-bottom: 90px;
+  }
+  .main .section-apresentation{
+    order: 2;
+    max-width: calc(100% - 64px);
+    padding-bottom: 100px;
+    padding-right: 64px;
+  }
+}
+
+
+@media (max-width: 700px){
+  body{
+    gap: 0;
+  }
+  .header{
+    align-items: center;
+    height: 127px;
+  }
+  .header .wrapper-button button{
+    border: unset;
+    width: 27px;
+    height: 21px;
+  }
+
+  .header .header-content{
+    position: fixed;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    width: calc(100% - 64px);
+    z-index: 999;
+    flex-direction: column;
+    height: auto;
+    padding: 24px 0;
+    gap: 24px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+  }
+
+  .header .header-content .header-menu{
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .header-content .header-dot{
+    width: 100%;
+    height: 1px;
+    width: calc(100% - 48px);
+    background-color: #e0e0e0;
+    display: block;
+    border-radius: unset;
+    opacity: 1;
+}
+}
+
+@media (max-width: 530px){
+  .main .section-apresentation{
+    padding-right: 0px;
+    max-width: calc(100% - 36px);
+  }
+  .main .section-apresentation .title{
+    font-size: 40px;
+  }
+}
+@media (max-width: 400px){
+  .main .section-ilustration{
+    min-height: 241px;
+    margin-bottom: 24px;
+    max-width: calc(100% - 36px);
+  }
+
+  .main .section-apresentation .text-description{
+    max-width: 234px;
+    margin-bottom: 32px;
+  }
+  
+}
