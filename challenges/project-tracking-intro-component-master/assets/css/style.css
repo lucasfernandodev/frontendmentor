@@ -41,7 +41,7 @@ body{
   flex-direction: column;
   flex-wrap: wrap;
   gap: 161px;
-  background-color: hsl(207, 33%, 95%);
+  background-color: #fff;
 }
 
 @media (max-height: 800px){
@@ -153,6 +153,7 @@ body{
 .main .section-apresentation .wrapper-description span:not(.featured){
   letter-spacing: 0.28em;
   text-transform: uppercase;
+  opacity: 0.5;
 }
 
 .main .section-apresentation .title{
@@ -167,7 +168,8 @@ body{
   max-width: 294px;
   font-size: 1.12rem;
   font-weight: 400;
-  letter-spacing: 0.06em
+  letter-spacing: 0.06em;
+  opacity: 0.5;
 }
 
 .main .section-apresentation .wrapper-button .btn-action{
