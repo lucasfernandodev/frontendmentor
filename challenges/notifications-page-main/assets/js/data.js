@@ -1,0 +1,60 @@
+export const data = [
+  {
+    perfil_image: './assets/images/avatar-mark-webber.webp',
+    name: 'Mark Webber',
+    type: 'reacted to your recent post',
+
+    target: 'My first tournament today!',
+    read: false,
+    time_ago: '1m ago',
+  },
+  {
+    perfil_image: './assets/images/avatar-angela-gray.webp',
+    name: 'Angela Gray',
+    type: 'followed you',
+    target: null,
+    read: false,
+    time_ago: '5m ago',
+  },
+  {
+    perfil_image: './assets/images/avatar-jacob-thompson.webp',
+    name: 'Jacob Thompson',
+    type: 'has joined your group',
+    target: 'Chess Club',
+    read: false,
+    time_ago: '1 day ago',
+  },
+  {
+    perfil_image: './assets/images/avatar-rizky-hasanuddin.webp',
+    name: 'Rizky Hasanuddin',
+    type: 'sent you a private message',
+    target:
+      "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+    read: true,
+    time_ago: '5 days ago',
+  },
+  {
+    perfil_image: './assets/images/avatar-kimberly-smith.webp',
+    name: 'Kimberly Smith',
+    type: 'commented on your picture',
+    target: './assets/images/image-chess.webp',
+    read: true,
+    time_ago: '1 week ago',
+  },
+  {
+    perfil_image: './assets/images/avatar-nathan-peterson.webp',
+    name: 'Nathan Peterson',
+    type: 'reacted to your recent post',
+    target: '5 end-game strategies to increase your win rate',
+    read: true,
+    time_ago: '2 weeks ago',
+  },
+  {
+    perfil_image: './assets/images/avatar-anna-kim.webp',
+    name: 'Anna Kim',
+    type: 'left the group',
+    target: 'Chess Club',
+    read: true,
+    time_ago: '2 weeks ago',
+  },
+];
