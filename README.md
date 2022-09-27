@@ -70,6 +70,8 @@ no desenvolvimento web, por desafios front-end que incluem web designs profissio
 |Social media dashboard with theme switcher|🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/social-media-dashboard-with-theme-switcher-master/">Ver</a>
 |Coding bootcamp testimonials slider |🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/coding-bootcamp-testimonials-slider-master/">Ver</a>|
 |Project tracking intro component|🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/project-tracking-intro-component-master/">Ver</a>|
+|Notifications page|🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/notifications-page-main/">Ver</a>|
+
 
 ## 🌎 Me Encontre
 
