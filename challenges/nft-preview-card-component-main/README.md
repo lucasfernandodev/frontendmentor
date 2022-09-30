@@ -1,6 +1,6 @@
 <img src="./docs/design/desktop-design.jpg" alt="Frontend Mentor - NFT preview card component" />
 
-# Frontend Mentor
+# Frontend Mentor - NFT preview card component solution
 
 Esse é um projeto do <b>Frontend Mentor</b>, criado e disponibilizado com o objetivo de avançar mais como dev ganhando experiência em diversos projetos, sempre com um novo desafio, ficando cada vez mais complicado.
 
