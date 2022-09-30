@@ -1,10 +1,8 @@
-import Paths from './paths.js';
+import Paths from './node/data.js';
 import toggleScroll from './toggleScroll.js';
 
 // Adiciona animação ao scroll
 window.addEventListener('scroll', () => toggleScroll())
-
-
 
 // Seleciona o container que vai os cards
 const cards = document.querySelector('.cards');
@@ -12,8 +10,10 @@ const cards = document.querySelector('.cards');
 // Pega a url de onde está os projetos
 const url = 'https://lucasfernandodev.github.io/frontendmentor/challenges/';
 
+const paths = Paths()[0];
 // Carrega os cards
-for (let path of Paths) {
+
+for (let path of paths) {
 
     if(path.id === 'ecommerce-product-page-main'){
         cards.innerHTML += `
