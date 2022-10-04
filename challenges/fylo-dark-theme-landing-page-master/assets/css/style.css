@@ -1,0 +1,36 @@
+@import url(./all.css);
+@import url(./responsive.css);
+
+.btn-action{
+  transition: background 650ms linear;
+  cursor: pointer;
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  font-weight: bold;
+  border: none;
+  border-radius: 22px;
+  color: hsl(0, 0%, 100%);
+}
+
+i.icon{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-action:hover{
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+
+#ilustration-1{
+  max-width: 717px;
+}
+
+#ilustration-2{
+  max-width: 615px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: hsl(0, 0%, 100%);
+}

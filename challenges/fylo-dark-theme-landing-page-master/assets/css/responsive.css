@@ -1,0 +1,466 @@
+
+/* Aumentando texto e limitando cards do tesimonial */
+@media (min-width: 365px){
+  .main .header .menu .menu-item .menu-link{
+    font-size: 13px;
+  }
+
+  /* About */
+  .main .about .about-more {
+    font-size: 13px;
+  }
+
+  .main .about .title{
+    width: 100%;
+  }
+
+  .main .about .about-more .icon {
+    width: 150px;
+    width: 16px;
+    height: 16px;
+    left: 135px;
+    bottom: -2px;
+  }
+
+  .main .cards .card{
+    max-width: 386px
+  }
+
+  /* testimonial */
+  .main .testimonial .card{
+    height: auto;
+    gap: 12px;
+    width: calc(100% - 48px);
+    max-width: 360px
+  }
+
+  .main .testimonial .card .card-text {
+    font-size: 13px;
+  }
+
+  .main .testimonial .card .card-person .card-person-image{
+    margin-top: 4px;
+  }
+  
+  .main .testimonial .card .card-person .card-person-image img {
+    width: 28px;
+    height: 28px;
+  }
+
+
+  .main .testimonial .card .card-person .card-person-info .person-name {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .main .testimonial .card .card-person .card-person-info .person-role {
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+
+}
+
+@media (min-width: 512px){
+  :root{
+    --px: 32px;
+  }
+
+  .main .cards{
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (min-width: 610px) {
+  .main .hero {
+    background-image: url(../images/bg-curvy-desktop.svg);
+  }
+
+    .main .hero::before {
+    bottom: 0px;
+    display: none;
+  }
+
+  .main .hero .title {
+    font-size: 42px;
+    margin-top: 40px;
+    line-height: 58px;
+  }
+
+  .main .hero .text-intro {
+    max-width: 581px;
+    font-size: 20px;
+    margin-top: 16px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 710px){
+  .main .header{
+    height: 125px;
+    align-items: center;
+  }
+
+  .main .header .brand{
+    width: 115.62px;
+    height: auto;
+  }
+
+  .main .header .menu .menu-item .menu-link{
+    font-size: 14px;
+  }
+
+  .main .about .content{
+    align-items: flex-start;
+    max-width: 555px;
+  }
+  .main .email-register .container-form .form{
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .main .email-register .form .form-input{
+    max-width: calc((100% - 24px) - 200px);
+  }
+
+  .main .email-register .container-form .form .btn-submit {
+    max-width: 200px;
+    margin-top: 0px;
+  }
+  .main .email-register .container-form .form .form-msg{
+    position: absolute;
+    top: calc(100% + 4px);
+  }
+
+  .main .footer .row .brand{
+    padding-left: 0px;
+  }
+
+  .main .footer .row .col{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .main .footer .row .col:first-child .item{
+    margin-top: 32px;
+    width: 50%;
+  }
+
+  .main .footer .row .col .item:not(.item:nth-child(3)){
+    width: 50%;
+    margin-top: 32px;
+    align-items: flex-start;
+  }
+
+  .main .footer .row .col .item.menu-social:last-child{
+    width: 100%;
+    min-width: 100%;
+  }
+
+
+}
+
+
+/* Footer versão desktop */
+@media (min-width: 1016px) {
+
+  .main .footer .row .brand{
+    padding-left: 0px;
+  }
+
+  .main .footer .row .brand img{
+    max-width: 109px;
+    width: 100%;
+  }
+
+  .main .footer .row:last-child {
+    flex-direction: row;
+    padding-bottom: 45px;
+  }
+
+  .main .footer .row:last-child .item.localization {
+    align-items: flex-start;
+    min-width: 280px;
+  }
+
+  .main .footer .row:last-child {
+    justify-content: space-between;
+  }
+
+  .main .footer .row .col {
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main .footer .row .col:first-child {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .main .footer .row .col:last-child {
+    justify-content: flex-end;
+    gap: 64px;
+  }
+
+  .main .footer .row:last-child .col:first-child .item {
+    width: auto;
+    max-width: calc((100% / 2) - 16px);
+    margin-top: 45px;
+  }
+
+  .main .footer .row:last-child .col:last-child .item {
+    width: auto;
+    max-width: calc((100% - 64px) / 3);
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 1024px){
+  :root{
+    --px: 80px;
+    --small-text: 14px
+  }
+
+  .main .cards{
+    flex-direction: row;
+    gap: 48px;
+    justify-content: center;
+  }
+
+  .main .cards .card{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    max-width: calc((100% / 2) - 48px);
+    min-height: 178px;
+
+  }
+
+  .main .about{
+    flex-direction: row;
+    align-items: center;
+    gap: 32px
+  }
+
+  .main .about .title{
+    font-size: 18px;
+  }
+
+  .main .about img, .main .about .content{
+    width: calc(50% - 32px);
+  }
+
+  .main .testimonial{
+    padding-left: 0px;
+    padding: 0px var(--px);
+    flex-direction: row;
+    padding-top: 141px;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .main .testimonial .card{
+    min-width: 310px;
+    width: calc((100% - 32px) / 3);
+    padding-top: 16px;
+  }
+  .main .testimonial .card .card-text{
+    font-size: 14px;
+    line-height:22px;
+  }
+
+  .main .testimonial .card .card-person {
+    gap: 14px;
+  }
+
+  .main .testimonial .card .card-person .card-person-image img{
+    width: 32px;
+    height: 32px;
+  }
+
+  .main .testimonial .card .card-person .card-person-info .person-name{
+    font-size: 14px;
+  }
+  .main .testimonial .card .card-person .card-person-info .person-role{
+    font-size: 12px;
+  }
+
+  .main .email-register .container-form .title{
+    font-size: 24px;
+  }
+
+  .main .email-register .container-form .text{
+    max-width: 550px;
+    margin-top: 24px;
+  }
+
+  .main .footer .row:last-child .col:first-child{
+    width: 55%;
+    justify-content: space-between;
+  }
+
+  .main .footer .row:last-child .col:last-child{
+    width: 45%;
+  }
+
+  .main .footer .row:last-child .col:last-child{
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .main .footer .row:last-child .col:last-child .item,
+  .main .footer .row:last-child .col:last-child .menu-social{
+    width: calc((100% - 32px) / 3);
+    max-width: unset;
+    min-width:0px;
+  }
+
+  .main .footer .row:last-child .col:last-child .menu-social{
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1248px){
+  .main .about .title{
+    font-size: 32px;
+    max-width: 320px;
+    line-height: 42px;
+  }
+
+  .main .about .about-more{
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 1400px){
+  :root{
+    --px: 80px
+  }
+
+  .main .header .brand img{
+    width: 177px;
+    height: auto;
+  }
+  .main .header{
+    height: 198px;
+    align-items: center;
+  }
+  .main .header .menu{
+    gap: 60px;
+  }
+  .main .header .menu .menu-item .menu-link{
+    font-size: 16px;
+  }
+
+  .main .hero{
+    padding-top: 0px;
+  }
+
+  .main .hero img{
+    width: 717px;
+    height: 533px;
+  }
+
+  .main .hero .title{
+    font-size: 42px;
+    line-height: 58px;
+  }
+  .main .hero .intro-text{
+    max-width: 589px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main .hero .btn-action{
+    height: 56px;
+    font-size: 16px;
+    line-height: auto;
+    border-radius: 32px;
+    width: 282px;
+    margin-top: 32px;
+  }
+
+  .main .cards{
+    gap: 90px;
+  }
+
+  .main .cards .card{
+    max-width: 370px;
+    width: auto;
+  }
+
+  .main .about{
+    gap: 57px;
+  }
+
+  .main .about .content .title{
+    font-size: 42px;
+    max-width: 372px;
+  }
+
+  .main .about .content .text{
+    font-size: 16px;
+    margin-top: 27px;
+  }
+
+  .main .about img{
+    width: 615px;
+    height: 465px;
+  }
+  .main .testimonial{
+    gap: 40px;
+  }
+  .main .testimonial .card:first-child:before {
+    content: '';
+    width: 58px;
+    height: 44px;
+    position: absolute;
+    background: url(../images/bg-quotes.png);
+    background-size: cover;
+    left: 4px;
+    top: -36px;
+    z-index: -1;
+  }
+
+  .main .testimonial .card{
+    width: 358px;
+    height: 198px;
+    padding: 24px 43px 26px 26px;
+  }
+
+  .main .testimonial .card img{
+    width: 28px;
+    height: 28px;
+  }
+
+  .main .testimonial .card .card-text{
+    font-size: 15px;
+  }
+
+  .main .email-register .container-form{
+    padding-top: 40px;
+  }
+
+  .main .email-register .container-form .title{
+    font-size: 34px;
+  }
+
+  .main .email-register .container-form .form-input,
+  .main .email-register .container-form .btn-submit{
+    height: 48px;
+  }
+
+
+  .main .footer .row .col .item.menu-social .menu-item .menu-link{
+    width: 32px;
+    height: 32px;
+  }
+}
