@@ -122,7 +122,7 @@
   }
 
   .main .email-register .form .form-input{
-    max-width: calc((100% - 24px) - 200px);
+    max-width: calc((100% - 24px) - 204px);
   }
 
   .main .email-register .container-form .form .btn-submit {
@@ -349,19 +349,23 @@
     width: 177px;
     height: auto;
   }
+
   .main .header{
     height: 198px;
     align-items: center;
   }
+
   .main .header .menu{
     gap: 60px;
   }
+
   .main .header .menu .menu-item .menu-link{
     font-size: 16px;
   }
 
   .main .hero{
     padding-top: 0px;
+    margin-top: 0px;
   }
 
   .main .hero img{
@@ -373,6 +377,7 @@
     font-size: 42px;
     line-height: 58px;
   }
+
   .main .hero .intro-text{
     max-width: 589px;
     font-size: 20px;
@@ -390,11 +395,39 @@
 
   .main .cards{
     gap: 90px;
+    margin-top: 0px;
+    padding-top: 83px;
   }
 
   .main .cards .card{
     max-width: 370px;
     width: auto;
+  }
+
+  .main .cards .card .icon{
+    width: 86px;
+    height: 86px;
+  }
+
+  .main .cards .card .title{
+    font-size: 21.2px;
+    line-height: normal;
+    margin-top: 24px;
+  }
+
+  .main .cards .card .card-text{
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .main .cards .card:nth-child(1),
+  .main .cards .card:nth-child(3){
+    max-width: 354px;
+  }
+
+  .main .cards .card:nth-child(2),
+  .main .cards .card:nth-child(4){
+    max-width: 382px;
   }
 
   .main .about{
@@ -415,9 +448,11 @@
     width: 615px;
     height: 465px;
   }
+
   .main .testimonial{
     gap: 40px;
   }
+
   .main .testimonial .card:first-child:before {
     content: '';
     width: 58px;
@@ -445,17 +480,38 @@
     font-size: 15px;
   }
 
+  .main .email-register{
+    height: 362px;
+  }
+
   .main .email-register .container-form{
-    padding-top: 40px;
+    padding: 41px 50px 41px 73px;
+    height: 274px;
+    gap: 27px;
   }
 
   .main .email-register .container-form .title{
-    font-size: 34px;
+    font-size: 32.2px;
+  }
+
+  .main .email-register .container-form .text{
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 0px;
+    max-width: 646px;
   }
 
   .main .email-register .container-form .form-input,
   .main .email-register .container-form .btn-submit{
     height: 48px;
+  }
+
+  .main .email-register .container-form .form-input{
+    width: calc((100% - 27px) - 204px);
+  }
+  .main .email-register .container-form .btn-submit{
+    width: 100%;
+    max-width: 204px;
   }
 
 
