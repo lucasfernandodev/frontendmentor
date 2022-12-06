@@ -1,0 +1,7 @@
+.header{
+  grid-area: header;
+  background-image: url("/assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

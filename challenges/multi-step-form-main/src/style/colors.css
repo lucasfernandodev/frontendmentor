@@ -45,7 +45,7 @@
   /* MSF - Multi Step Form */
   --msf-bg: var(--color-gray-200);
   --msf-foreground-bg: var(--color-white-100);
-  --msf-accent-color: var(--color-blue-500)
+  --msf-accent-color: var(--color-blue-500);
   --msf-text-color: var(--color-gray-400);
   --msf-title-color: var(--color-blue-600);
 }
