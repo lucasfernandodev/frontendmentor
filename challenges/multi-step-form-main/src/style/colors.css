@@ -1,0 +1,51 @@
+:root{
+  --color-blue-600: hsl(213, 96%, 18%);
+  --color-blue-500: hsl(243, 100%, 62%);
+  --color-blue-400: hsl(228, 100%, 84%);
+  --color-blue-300: hsl(206, 94%, 87%);
+
+  --color-red-500: hsl(354, 84%, 57%);
+
+  --color-white-100: hsl(0, 0%, 100%);
+
+  --color-gray-400: hsl(231, 11%, 63%);
+  --color-gray-300: hsl(229, 24%, 87%);
+  --color-gray-200: hsl(217, 100%, 97%);
+  --color-gray-100: hsl(231, 100%, 99%);
+
+  /* Steps */
+
+  --step-title: hsl(228, 100%, 84%);
+  --step-description: var(--color-white-100);
+
+  --step-bg: transparent;
+  --step-color: var(--color-white-100);
+  --step-border: var(--color-white-100);
+
+  --step-bg-hover: var(--color-blue-300);
+  --step-color-hover: var(--color-blue-600);
+  --setp-border-hover: var(--color-blue-300);
+
+  /* Butons */
+  --button-confirm-bg: var(--color-blue-500);
+  --button-config-color: var(--color-gray-100);
+  
+  --button-nextStep-bg: var(--color-blue-600);
+  --button-nextStep-color: var(--color-gray-200);
+
+  --buton-goBack-bg: var(--color-white-100);
+  --buton-goBack-color: var(--color-gray-400);
+
+  /* Form */
+
+  --invalid-text-color: var(--color-red-500);
+  --invalid-text-border: var(--color-red-500);
+
+
+  /* MSF - Multi Step Form */
+  --msf-bg: var(--color-gray-200);
+  --msf-foreground-bg: var(--color-white-100);
+  --msf-accent-color: var(--color-blue-500)
+  --msf-text-color: var(--color-gray-400);
+  --msf-title-color: var(--color-blue-600);
+}
