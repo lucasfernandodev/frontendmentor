@@ -1,0 +1,35 @@
+.stepWithTitle{
+  display: flex;
+  gap: 16px;
+  height: fit-content;
+  max-height: 34px;
+}
+
+.stepWithTitle .wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 34px;
+}
+
+.stepWithTitle .wrapper .title{
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--step-title-color);
+}
+
+.stepWithTitle .wrapper .description{
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--step-description-color);
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1.9%;
+}
+
+@media (max-width: 376px) {
+  .stepWithTitle .wrapper{
+    display: none;
+  }
+}

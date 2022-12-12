@@ -1,0 +1,20 @@
+[{
+  "owner":{
+    "name": "Lucas Fernando",
+    "email": "example@algumacoisa",
+    "phone": "5 555 555"
+  },
+  "plain":{
+    "name": "arcade",
+    "price": 12,
+    "type": "Monthly"
+  },
+  "add-Ons":{
+    "add-1": {
+      "price": 45
+    },
+    "add-2": {
+      "price": 21
+    }
+  }
+}]

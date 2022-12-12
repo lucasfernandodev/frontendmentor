@@ -4,4 +4,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 376px){
+  .header{
+    background-image: url("/assets/images/bg-sidebar-mobile.svg");
+    justify-content: center;
+    padding-top: 32px;
+    position: absolute;
+    width: 100vw;
+    height: 250px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
 }

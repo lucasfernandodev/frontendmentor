@@ -1,0 +1,162 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--msf-foreground-bg);
+}
+
+.form .header {
+  width: 100%;
+  padding: 44px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form .header .title {
+  font-size: 32px;
+  line-height: 24px;
+}
+
+.form .label {
+  color: var(--color-blue-600);
+  font-weight: 600;
+}
+
+.form .input {
+  height: 47px;
+  border: 1px solid var(--color-gray-600);
+  border-radius: 7px;
+  color: var(--color-blue-600);
+  font-weight: bold;
+  padding-left: 16px;
+  outline: none;
+}
+
+.form .input:hover,
+.form .input:focus {
+  outline: 1px solid var(--color-blue-600);
+  border-color: var(--color-blue-600);
+}
+
+.form .input::placeholder {
+  color: var(--color-gray-400);
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.form .invalid .input {
+  border-color: var(--color-red-500) !important;
+  outline: 2px solid var(--color-red-500) !important;
+}
+
+.form .ErrorMessage {
+  font-size: 12px;
+  color: var(--invalid-text-color);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: 600;
+  display: none;
+}
+
+.form .invalid .ErrorMessage {
+  display: flex;
+}
+
+.form .content {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+  flex-grow: 1;
+}
+
+.form .content  .fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: relative;
+}
+
+.form .footer {
+  height: 94px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 450px;
+}
+
+.form .footer button + button{
+  margin-left: auto;
+}
+
+
+@media (max-width: 375px){
+  .form{
+    width: 100%;
+    align-items: center;
+    border-radius: 14px;
+    justify-content: center;
+  }
+
+  .form .content, .form .header{
+    width: inherit;
+    align-items: center;
+    max-width: 300px;
+  }
+
+  .form .header{
+    align-items: flex-start;
+    text-align: left;
+    padding: 32px 0px 0px;
+    gap: 11px;
+  }
+
+  .form .header .title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .form .header .description{
+    font-size: 15.8px;
+    line-height: 24px;
+  }
+
+  .form .content{
+    gap: 16px;
+  }
+
+  .form .content .fieldset{
+    width: 100%;
+  }
+
+  .form .content .label {
+    font-size: 12px;
+  }
+
+  .form .content .input{
+    height: 40px;
+    border-radius: 6px;
+  }
+
+  .form .content .input::placeholder{
+    font-size: 15px;
+  }
+
+  .form .footer{
+    background-color: var(--msf-foreground-bg);
+    position: absolute;
+    bottom: -24px;
+    left: 0px;
+    width: 100%;
+    height: 72px;
+    padding: 0px 16px;
+  }
+}

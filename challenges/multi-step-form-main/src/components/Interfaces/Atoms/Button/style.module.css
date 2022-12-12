@@ -1,0 +1,42 @@
+.button{
+  border: none;
+  width: 124px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer; 
+  font-weight: bold;
+  transition: 320ms linear;
+}
+
+.button.next{
+  background-color: var(--button-nextStep-bg);
+  color: var(--button-nextStep-color);
+}
+
+.button.next:hover{
+  opacity: 0.8;
+}
+
+.button.back{
+  background-color: var(--buton-goBack-bg);
+  color: var(--buton-goBack-color);
+}
+
+.button.back:hover{
+  color: var(--color-blue-600);
+}
+
+.button.confirm{
+  background-color: var(--button-confirm-bg);
+  color: var(--button-confirm-color);
+}
+
+.button.confirm:hover{
+  opacity: 0.8;
+}
+
+@media (max-width: 550px){
+  .button{
+    height: 40px;
+  }
+}

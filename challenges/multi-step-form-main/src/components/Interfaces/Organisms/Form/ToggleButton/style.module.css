@@ -1,0 +1,61 @@
+.toggle {
+  display: flex;
+  gap: 12px;
+}
+
+.toggle button {
+  height: 20px;
+  width: 38px;
+  border-radius: 20px;
+  border: 0px;
+  background: var(--color-blue-600);
+  position: relative;
+  cursor: pointer;
+}
+.toggle button::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 50%;
+  background: var(--color-white-100);
+  z-index: 1000;
+  display: block;
+  position: absolute;
+  animation: slideToStart 300ms linear forwards;
+}
+
+.toggle button[aria-pressed="true"]::before {
+  animation: slideToEnd 300ms linear forwards;
+}
+
+@keyframes slideToEnd {
+  0% {
+    transform: translateY(-50%) translateX(4px);
+  }
+  100% {
+    transform: translateY(-50%) translateX(22px);
+  }
+}
+
+@keyframes slideToStart {
+  0% {
+    transform: translateY(-50%) translateX(22px);
+  }
+  100% {
+    transform: translateY(-50%) translateX(4px);
+  }
+}
+
+.toggle span {
+  display: none;
+}
+
+.toggle label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.active {
+  color: var(--color-blue-600);
+}

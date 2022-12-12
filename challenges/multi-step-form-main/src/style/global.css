@@ -1,17 +1,14 @@
-*{
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-
-video, img{
+video,
+img {
   width: 100%;
   height: auto;
 }
 
-html, body, #root{
+html,
+body,
+#root {
   font-size: 16px;
-  font-family: 'Ubunto', sans-serif;
+  font-family: "Ubunto", sans-serif;
   background-color: var(--msf-bg);
   color: var(--msf-text-color);
   font-weight: normal;
@@ -21,15 +18,34 @@ html, body, #root{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1px 0;
 }
 
-button, input{
+button,
+input {
   font-size: 1rem;
-  font-family: 'Ubunto', sans-serif;
+  font-family: "Ubunto", sans-serif;
 }
 
-
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--msf-title-color);
   font-weight: bold;
+}
+
+::selection {
+  background: var(--color-blue-600);
+  color: var(--color-white-100);
+}
+
+@media (max-width: 376px) {
+  #root {
+    padding-top: 100px;
+    height: auto;
+    align-items: flex-start;
+  }
 }
