@@ -71,7 +71,8 @@ no desenvolvimento web, por desafios front-end que incluem web designs profissio
 |Coding bootcamp testimonials slider |🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/coding-bootcamp-testimonials-slider-master/">Ver</a>|
 |Project tracking intro component|🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/project-tracking-intro-component-master/">Ver</a>|
 |Notifications page|🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/notifications-page-main/">Ver</a>|
-|Shortly URL shortening API Challenge|🔥🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/url-shortening-api-master/">Ver</a>
+|Shortly URL shortening API Challenge|🔥🔥🔥|HTML · CSS · JS|<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/url-shortening-api-master/">Ver</a> |
+|Multi-step form solution|🔥🔥🔥| React · Typescript · Vite | <a href="https://frontendmentor-3z71.vercel.app/">Ver</a>|
 
 
 ## 🌎 Me Encontre
