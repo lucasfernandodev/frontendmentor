@@ -1,0 +1,201 @@
+@import url(./root.css);
+
+.container {
+  width: 100%;
+  max-width: 736px;
+  border-radius: 24px;
+  height: 512px;
+  box-shadow: 16px 24px 28px hsla(241, 100%, 89%, 30%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container section {
+  width: 50%;
+  border-radius: 24px;
+  height: 100%;
+  padding: 57px 49px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 665px) {
+  body {
+    align-items: flex-start;
+  }
+  .container {
+    height: auto;
+  }
+
+  .container section {
+    width: 100%;
+    padding: 24px 30px;
+    padding-bottom: 42px;
+    height: 458px;
+  }
+
+  .container section:first-child {
+    border-radius: 0px 0px 24px 24px;
+    height: 356px;
+  }
+}
+
+.container .section-result {
+  background: var(--card-bg);
+  color: hsl(221, 100%, 96%);
+}
+
+.container .section-result .title {
+  font-size: 2.4rem;
+}
+
+.container .section-result .count {
+  display: flex;
+  width: 194px;
+  height: 194px;
+  border-radius: 50%;
+  background: var(--circle-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .section-result .count .value {
+  font-weight: bold;
+  font-size: 72px;
+}
+
+@media (max-width: 665px) {
+  .container .section-result .title {
+    font-size: 1.8rem;
+  }
+  .container .section-result .count {
+    width: 138px;
+    height: 138px;
+  }
+  .container .section-result .count .value {
+    font-size: 54px;
+  }
+}
+
+.container .section-result .count .show-count-all {
+  opacity: 0.5;
+}
+
+.container .section-result .description {
+  text-align: center;
+  color: hsla(221, 100%, 96%, 70%);
+}
+
+.container .section-result .subtitle {
+  font-size: 3.2rem;
+}
+
+@media (max-width: 665px) {
+  .container .section-result .subtitle {
+    font-size: 2.4rem;
+  }
+}
+
+.container .section-summary {
+  color: hsl(224, 30%, 27%);
+  align-items: flex-start;
+}
+
+.container .section-summary .title {
+  font-size: 2.4rem;
+}
+
+.container .section-summary .score-detalhed {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 44px;
+  width: 100%;
+}
+
+.container .section-summary .score-detalhed .score-detalhed-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container .section-summary .score-detalhed .score-detalhed-item .placeholder {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.container
+  .section-summary
+  .score-detalhed
+  .score-detalhed-item
+  .placeholder
+  img {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+
+.container
+  .section-summary
+  .score-detalhed
+  .score-detalhed-item:nth-child(1)
+  .placeholder {
+  color: var(--color-red);
+}
+.container
+  .section-summary
+  .score-detalhed
+  .score-detalhed-item:nth-child(2)
+  .placeholder {
+  color: var(--color-yellow);
+}
+.container
+  .section-summary
+  .score-detalhed
+  .score-detalhed-item:nth-child(3)
+  .placeholder {
+  color: var(--color-green);
+}
+.container
+  .section-summary
+  .score-detalhed
+  .score-detalhed-item:nth-child(4)
+  .placeholder {
+  color: var(--color-blue);
+}
+
+.container .section-summary .score-detalhed .score-detalhed-item .value {
+  color: hsla(224, 30%, 27%, 50%);
+}
+
+.container .section-summary .score-detalhed .score-detalhed-item .value .entry {
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+}
+
+.container .section-summary .btn {
+  height: 56px;
+  width: 100%;
+  border-radius: 24px;
+  border: none;
+  background: linear-gradient(
+    to bottom,
+    hsl(224, 30%, 27%),
+    hsl(224, 30%, 27%)
+  );
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: hsl(221, 100%, 96%);
+  transition: background 450ms ease-in-out;
+}
+
+.container .section-summary .btn:hover {
+  background: var(--card-bg);
+}

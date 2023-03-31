@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <section class="section-result">
+        <h2 class="title">Your Result</h2>
+        <div class="count">
+          <span class="value">76</span>
+          <span class="show-count-all">of 100</span>
+        </div>
+        <h3 class="subtitle">Great</h3>
+        <p class="description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <section class="section-summary">
+        <h2 class="title">Summary</h2>
+        <ul class="score-detalhed">
+          <li class="score-detalhed-item">
+            <span class="placeholder">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="icon reactions"
+              />
+              <span>Reaction</span></span
+            ><span class="value"><span class="entry">80</span> / 100</span>
+          </li>
+          <li class="score-detalhed-item">
+            <span class="placeholder"
+              ><img
+                src="./assets/images/icon-memory.svg"
+                alt="icon memory"
+              /><span>Memory</span></span
+            ><span class="value"><span class="entry">92</span> / 100</span>
+          </li>
+          <li class="score-detalhed-item">
+            <span class="placeholder">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt="icon verbal"
+              /><span>Verbal</span></span
+            ><span class="value"><span class="entry">61</span> / 100</span>
+          </li>
+          <li class="score-detalhed-item">
+            <span class="placeholder"
+              ><img
+                src="./assets/images/icon-visual.svg"
+                alt="icon visual"
+              /><span>Visual</span></span
+            ><span class="value"><span class="entry">72</span> / 100</span>
+          </li>
+        </ul>
+        <button class="btn">Continue</button>
+      </section>
+    </main>
+  </body>
+</html>
