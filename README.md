@@ -74,18 +74,20 @@ no desenvolvimento web, por desafios front-end que incluem web designs profissio
 | Shortly URL shortening API Challenge                       | 🔥🔥🔥   | HTML · CSS · JS                         | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/url-shortening-api-master/">Ver</a>                         |
 | Multi-step form solution                                   | 🔥🔥🔥   | React · Typescript · Vite               | <a href="https://frontendmentor-3z71.vercel.app/">Ver</a>                                                                         |
 | Intro section with dropdown navigation                     | 🔥🔥     | HTML · CSS · JS                         | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/intro-section-with-dropdown-navigation-main/">Ver</a>       |
+|Results summary component | 🔥 | HTML · CSS · JS |<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/results-summary-component-main/">Ver</a> |
+| Blog preview card | 🔥 | HTML · CSS · JS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/blog-preview-card-main/">Ver</a> |
 
 ## 🌎 Me Encontre
 
-<a href="https://www.instagram.com/lucasfernando.dev/" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+<a href="https://www.instagram.com/lucasfernandodev/" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram - Lucas Fernando"/>
 </a>
 <a href="https://www.linkedin.com/in/frontlucasfernandodev/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn - Lucas Fernando"/>
 </a>
 <a href="https://codepen.io/lucasfernandodev" target="_blank">
-  <img src="https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white" alt="Code pen"/>
+  <img src="https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white" alt="Codepen - Lucas Fernando"/>
 </a>
 <a href="mailto:lucasfernando.dev@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="GMail"/>
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email - Lucas Fernando"/>
 </a>
