@@ -76,6 +76,7 @@ no desenvolvimento web, por desafios front-end que incluem web designs profissio
 | Intro section with dropdown navigation                     | 🔥🔥     | HTML · CSS · JS                         | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/intro-section-with-dropdown-navigation-main/">Ver</a>       |
 |Results summary component | 🔥 | HTML · CSS · JS |<a href="https://lucasfernandodev.github.io/frontendmentor/challenges/results-summary-component-main/">Ver</a> |
 | Blog preview card | 🔥 | HTML · CSS · JS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/blog-preview-card-main/">Ver</a> |
+| Expenses chart component solution | 🔥🔥 | HTML · CSS · JS | <a href="https://lucasfernandodev.github.io/frontendmentor/challenges/expenses-chart-component-main/">Ver</a> |
 
 ## 🌎 Me Encontre
 

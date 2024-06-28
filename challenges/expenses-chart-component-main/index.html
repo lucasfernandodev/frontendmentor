@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="app">
+    <!-- Balance Content -->
+    <header class="app-header">
+      <div class="header-content">
+        <h1 class="app-balance-label">My balance</h1>
+        <h2 class="app-balance-value">$921.48</h2>
+      </div>
+      <div class="header-brand">
+        <img src="./assets/images/logo.svg" alt="Logo">
+      </div>
+    </header>
+
+    <!-- Balance statics -->
+    <section class="app-info">
+      <!-- Chart -->
+      <div class="chart">
+        <h2 class="chart-title">Spending - Last 7 days</h2>
+        <div id="chart-area" class="chart-area"></div>
+      </div>
+
+      <!-- Monthly Revenue Info -->
+      <div class="balance-info">
+        <div class="col">
+          <span class="color-gray">Total this month</span>
+          <span>$478.33</span>
+        </div>
+        <div class="col">
+          <span>+2.4%</span>
+          <span class="color-gray">from last month</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
